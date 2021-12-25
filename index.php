@@ -40,7 +40,7 @@ https://templatemo.com/tm-560-astro-motion
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbar-supported-content">
-                    <h1><?php echo "Hello World!" ?></h1>
+                    <h1><?php echo "Hello World!!" ?></h1>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item selected">
                         <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
