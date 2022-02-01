@@ -105,7 +105,7 @@ for e in United_States_test_list:
             country_name = temp[temp.find(',') + 2:] + country_name
             
         # print("CITY NAME: " + city_name + " XDD :DD")
-
+        
         crawl_city_html = requests.get('https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + country_name)
         
         current_processing_url = 'https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + country_name
