@@ -1,7 +1,3 @@
-import requests
-
-try:
-    response = requests.get("https://www.numbeo.com/cost-of-living/in/Mazar-i-sharif-Afghanistan")
-    print("URL is valid and exists on the internet")
-except requests.ConnectionError as exception:
-    print("URL does not exist on Internet")
+a= [(1,2),(1,4),(3,5),(5,7)]
+b = [ (x,y) for x, y in a if x  == 1 ]
+print(b)
