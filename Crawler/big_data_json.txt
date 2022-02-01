@@ -1,0 +1,19 @@
+{
+	"country_id" : 3,
+	"country_name" : "Albania",
+	"city_id" : -1,
+	"city_name" : "not_a_city"
+	"cost_of_livings_type" : [
+		
+		"restaurant" : ["Water" : ["$100", "$90~110"],
+						"beer" : []],
+		
+		"restaurant2" : [{}, {}, {}]
+		
+	]
+}
+{
+	...
+}
+
+

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php
-        $spark_test_file = fopen("population_by_country_2020.csv", "r") or die("Unable to open file!");
-        echo fread($spark_test_file, 1024);
-        echo "hello";
-        fclose($spark_test_file);
-        echo "close";
+        // $spark_test_file = fopen("population_by_country_2020.csv", "r") or die("Unable to open file!");
+        // echo fread($spark_test_file, 1024);
+        // echo "hello";
+        // fclose($spark_test_file);
+        // echo "close";
 ?>
 
 <html lang="en">
@@ -12,22 +12,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Motion by TemplateMo</title>
+    <title>Travel Vision - 你專屬的旅行夥伴</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css" type="text/css" /> 
     <link rel="stylesheet" href="css/templatemo-style.css">
-<!--
-    
-TemplateMo 560 Astro Motion
-
-https://templatemo.com/tm-560-astro-motion
-
--->
 </head>
 <body>
     <video autoplay muted loop id="bg-video">
-        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+        <source src="video/video.MP4" type="video/mp4">
     </video>
     <div class="page-container">
       <div class="container-fluid">
@@ -35,27 +28,26 @@ https://templatemo.com/tm-560-astro-motion
           <div class="col-xs-12">
             <div class="cd-slider-nav">
               <nav class="navbar navbar-expand-lg" id="tm-nav">
-                <a class="navbar-brand" href="#">Astro Motion</a>
+                <a class="navbar-brand" href="index.php"><img src="img/logo.png" width="300px;"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbar-supported-content">
-                    <h1><?php echo "Hello World!!!" ?></h1>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item selected">
                         <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="2">Gallery</a>
+                        <a class="nav-link" href="#0" data-no="2">Search</a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="3">About</a>
+                        <a class="nav-link" href="#0" data-no="3">Rank</a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="4">Contact</a>
+                        <a class="nav-link" href="#0" data-no="4">About</a>
                         <div class="circle"></div>
                       </li>
                     </ul>
@@ -68,7 +60,7 @@ https://templatemo.com/tm-560-astro-motion
       <div class="container-fluid tm-content-container">
         <ul class="cd-hero-slider mb-0 py-5">
           <li class="px-3" data-page-no="1">
-            <div class="page-width-1 page-left">
+            <div class="page-width-3 page-left">
               <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
                 <div class="intro-left tm-bg-dark">
                   <h2 class="mb-4">Welcome to Astro Motion</h2>
@@ -80,8 +72,8 @@ https://templatemo.com/tm-560-astro-motion
                   You are not permitted to redistribute this template on your Free CSS collection websites. Please <a rel="nofollow" href="https://templatemo.com/contact" target="_blank">contact us</a> for more information. </p>
                 </div>
                 <div class="intro-right">
-                  <img src="img/home-img-1.jpg" alt="Image" class="img-fluid intro-img-1">
-                  <img src="img/home-img-2.jpg" alt="Image" class="img-fluid intro-img-2">
+                  <img src="img/pexels-alleksana-4226100.jpg" alt="Image" class="img-fluid intro-img-1" width="500px;">
+                  <img src="img/pexels-nick-wehrli-5717750.jpg" alt="Image" class="img-fluid intro-img-2" width="500px;">
                 </div>
                 <div class="circle intro-circle-1"></div>
                 <div class="circle intro-circle-2"></div>
@@ -260,12 +252,12 @@ https://templatemo.com/tm-560-astro-motion
           Copyright 2021 Astro Motion Company Limited. All rights reserved.
         </div>
         <div class="col-md-6 px-0 tm-footer-right">
-          Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a>
+        © 2021 by Dept. MIS CCU</a>
         </div>
       </footer>
     </div>
   </div>
-  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+
   <div id="loader-wrapper">            
     <div id="loader"></div>
     <div class="loader-section section-left"></div>

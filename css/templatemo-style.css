@@ -19,7 +19,7 @@ body {
 }
 
 a {
-	color: #9F6;
+	color: rgb(231, 196, 130);
     text-decoration: none;
     transition: all 0.3s ease;
 }
