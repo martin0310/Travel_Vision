@@ -120,7 +120,14 @@ current_proc = 1
 
 # ---------------------------------------------------------------------------
 
+empty_cost_of_living = []
+empty_property_prices = []
+
+#2022/02/09 Test United-States
+United_States_test_list = [s for s in country_city_tuple_list if "United States" in s]
+Canada_States_test_list = [s for s in country_city_tuple_list if "Canada" in s]
 for e in country_city_tuple_list:
+# for e in Canada_States_test_list:
 
     #Print Current Procseeing City or Country 
     print(e + " [" + str(current_proc) + " / " + str(total_len) + "]", end='') 
@@ -135,19 +142,38 @@ for e in country_city_tuple_list:
         
         # print(e)
         
-        crawl_country_html = requests.get('https://www.numbeo.com/cost-of-living/country_result.jsp?country=' + e[1:e.find(',')])
-        soup2 = BeautifulSoup(crawl_country_html.text, "lxml")
-        crawl_country_data = soup2.find_all("div", class_="category_title")
-        type_item_count_dict = {"Restaurants" : 8, "Markets" : 19, "Transportation" : 8, "Utilities (Monthly)" : 3, "Sports And Leisure" : 3, "Childcare" : 2, "Clothing And Shoes" : 4, "Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
-        crawl_country_data2 = soup2.select("table.data_wide_table tr td")
+        crawl_country_html_col = requests.get('https://www.numbeo.com/cost-of-living/country_result.jsp?country=' + e[1:e.find(',')])
+        crawl_country_html_pp = requests.get('https://www.numbeo.com/property-investment/country_result.jsp?country=' + e[1:e.find(',')])
+
+        soup2_col = BeautifulSoup(crawl_country_html_col.text, "lxml")
+        soup2_pp = BeautifulSoup(crawl_country_html_pp.text, "lxml")
+
+        crawl_country_data_col = soup2_col.find_all("div", class_="category_title")
+        crawl_country_data_pp = soup2_pp.find_all("div", class_="category_title")
+        
+        # COL
+        type_col_item_count_dict = {"Restaurants" : 8, "Markets" : 19, "Transportation" : 8, "Utilities (Monthly)" : 3, "Sports And Leisure" : 3, "Childcare" : 2, "Clothing And Shoes" : 4, "Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
+        
+        # PP
+        type_pp_item_count_dict = {"Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
+
+        crawl_country_data2_col = soup2_col.select("table.data_wide_table tr td")
+        crawl_country_data2_pp = soup2_pp.select("table.data_wide_table tr td")
+
         crawl_cost_of_living_dictionary_temp = {}
+        crawl_property_prices_dictionary_temp = {}
+
         crawl_country_city_dictionary[e] = []
         # crawl_country_city_dictionary[e].append()
+        
         crawl_country_col_type_dict = {}
+        crawl_country_pp_type_dict = {}
+        
+        # COL
         counter = 0
-        for element in crawl_country_data:
+        for element in crawl_country_data_col:
 
-            item_count = type_item_count_dict[element.getText()]
+            item_count = type_col_item_count_dict[element.getText()]
 
             # print(counter)
 
@@ -156,17 +182,38 @@ for e in country_city_tuple_list:
             for i in range(counter, counter + item_count):
 
                 # 因為 albania_data2 的數量是 item_count * 3，所以 i 要 x3 然後 +1, +2
-                temp_dict[crawl_country_data2[i*3].text] = {"Median" : crawl_country_data2[i*3+1].text.replace('\n', '').replace('\xa0', ''), "range" : crawl_country_data2[i*3+2].text.replace('\n', '')}
+                temp_dict[crawl_country_data2_col[i*3].text] = {"Median" : crawl_country_data2_col[i*3+1].text.replace('\n', '').replace('\xa0', '').replace('\u00a3','').replace('\u00a5',''), "range" : crawl_country_data2_col[i*3+2].text.replace('\n', '')}
 
             crawl_country_col_type_dict[element.getText()] = temp_dict
+
+            counter = counter + item_count
+
+        # PP
+        counter = 0
+        for element in crawl_country_data_pp:
+
+            item_count = type_pp_item_count_dict[element.getText()]
+
+            # print(counter)
+
+            temp_dict = {}
+
+            for i in range(counter, counter + item_count):
+
+                # 因為 albania_data2 的數量是 item_count * 3，所以 i 要 x3 然後 +1, +2
+                temp_dict[crawl_country_data2_pp[i*3].text] = {"Median" : crawl_country_data2_pp[i*3+1].text.replace('\n', '').replace('\xa0', '').replace('\u00a3','').replace('\u00a5',''), "range" : crawl_country_data2_pp[i*3+2].text.replace('\n', '')}
+
+            crawl_country_pp_type_dict[element.getText()] = temp_dict
 
             counter = counter + item_count
 
         # print(albania_col_type_dict)
 
         crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_country_col_type_dict
+        crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_country_pp_type_dict
 
         crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
+        crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
 
         # print(albania_dict)
 
@@ -175,9 +222,11 @@ for e in country_city_tuple_list:
 
         # 左右瓜弧刪掉
         # space 換 dash
-        city_name = e[e.find(','):].replace(',', '').replace(')', '').replace('(', '').replace(' ', '-')
+        city_name = e[e.find(','):].replace(',', '').replace(')', '').replace('(', '').replace(' ', '-') #如果是美國 就是：城市-州
 
         country_name = e[1:e.find(',')].replace(' ','-')  
+
+        state_name = ''
 
         if country_name.__eq__('United-States'):
 
@@ -190,35 +239,82 @@ for e in country_city_tuple_list:
 
             city_name = temp[0:temp.find(',')].replace(' ', '-')
 
-            country_name = temp[temp.find(',') + 2:] + '-' + country_name  
+            #州-國家
+            state_name = temp[temp.find(',') + 2:]
+
+            if city_name.__eq__('Addison-IL') : #一開始好像有錯 一開始寫成 if city_name.__eq__('Addison IL')
+                city_name = 'Addison'
+                state_name = 'IL'
+            #country_name =  '-' + country_name  
+            # country_name = country_name  
             
         # print("CITY NAME: " + city_name + " XDD :DD")
 
-        crawl_city_html = requests.get('https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + country_name)
-        
-        current_processing_url = 'https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + country_name
+        dash = ''
 
-        if "Cannot find city id for" in crawl_city_html.text:
+        if len(state_name) != 0:
 
-            crawl_city_html = requests.get('https://www.numbeo.com/cost-of-living/in/' + city_name)
-            current_processing_url = 'https://www.numbeo.com/cost-of-living/in/' + city_name
+            dash = '-'
+
+        current_processing_url_col = 'https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + state_name + dash + country_name
+        current_processing_url_pp = 'https://www.numbeo.com/property-investment/in/' + city_name + '-' + state_name + dash + country_name
+
+        crawl_city_html_col = requests.get(current_processing_url_col)
+        crawl_city_html_pp = requests.get(current_processing_url_pp)
+
+        # COL
+        if "Cannot find city id for" in crawl_city_html_col.text:
+
+            current_processing_url_col = 'https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + state_name
+            crawl_city_html_col = requests.get(current_processing_url_col)
+
+            if "Cannot find city id for" in crawl_city_html_col.text:
+                current_processing_url_col = 'https://www.numbeo.com/cost-of-living/in/' + city_name
+                crawl_city_html_col = requests.get(current_processing_url_col)
+
+        # PP
+        if "Cannot find city id for" in crawl_city_html_pp.text:
+
+            current_processing_url_pp = 'https://www.numbeo.com/property-investment/in/' + city_name + '-' + state_name
+            crawl_city_html_pp = requests.get(current_processing_url_pp)
+
+            if "Cannot find city id for" in crawl_city_html_pp.text:
+                current_processing_url_pp = 'https://www.numbeo.com/property-investment/in/' + city_name
+                crawl_city_html_pp = requests.get(current_processing_url_pp)
 
         #Print Current Processing URL
         print()
-        print(current_processing_url) 
+        print(current_processing_url_col)
+        print(current_processing_url_pp)
 
-        soup2 = BeautifulSoup(crawl_city_html.text, "lxml")
-        crawl_city_data = soup2.find_all("div", class_="category_title")
-        type_item_count_dict = {"Restaurants" : 8, "Markets" : 19, "Transportation" : 8, "Utilities (Monthly)" : 3, "Sports And Leisure" : 3, "Childcare" : 2, "Clothing And Shoes" : 4, "Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
-        crawl_city_data2 = soup2.select("table.data_wide_table tr td")
+        soup2_col = BeautifulSoup(crawl_city_html_col.text, "lxml")
+        soup2_pp = BeautifulSoup(crawl_city_html_pp.text, "lxml")
+
+        crawl_city_data_col = soup2_col.find_all("div", class_="category_title")
+        crawl_city_data_pp = soup2_pp.find_all("div", class_="category_title")
+
+        # COL
+        type_col_item_count_dict = {"Restaurants" : 8, "Markets" : 19, "Transportation" : 8, "Utilities (Monthly)" : 3, "Sports And Leisure" : 3, "Childcare" : 2, "Clothing And Shoes" : 4, "Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
+        # PP
+        type_pp_item_count_dict = {"Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
+
+        crawl_city_data2_col = soup2_col.select("table.data_wide_table tr td")
+        crawl_city_data2_pp = soup2_pp.select("table.data_wide_table tr td")
+
         crawl_cost_of_living_dictionary_temp = {}
+        crawl_property_prices_dictionary_temp = {}
+
         crawl_country_city_dictionary[e] = []
         # crawl_country_city_dictionary[e].append()
-        crawl_city_col_type_dict = {}
-        counter = 0
-        for element in crawl_city_data:
 
-            item_count = type_item_count_dict[element.getText()]
+        crawl_city_col_type_dict = {}
+        crawl_city_pp_type_dict = {}
+
+        # COL
+        counter = 0
+        for element in crawl_city_data_col:
+
+            item_count = type_col_item_count_dict[element.getText()]
 
             # print(counter)
 
@@ -227,23 +323,55 @@ for e in country_city_tuple_list:
             for i in range(counter, counter + item_count):
 
                 # 因為 albania_data2 的數量是 item_count * 3，所以 i 要 x3 然後 +1, +2
-                temp_dict[crawl_city_data2[i*3].text] = {"Median" : crawl_city_data2[i*3+1].text.replace('\n', '').replace('\xa0', ''), "range" : crawl_city_data2[i*3+2].text.replace('\n', '')}
+                temp_dict[crawl_city_data2_col[i*3].text] = {"Median" : crawl_city_data2_col[i*3+1].text.replace('\n', '').replace('\xa0', '').replace('\u00a3','').replace('\u00a5',''), "range" : crawl_city_data2_col[i*3+2].text.replace('\n', '')}
 
             crawl_city_col_type_dict[element.getText()] = temp_dict
 
             counter = counter + item_count
 
+        # PP
+        counter = 0
+        for element in crawl_city_data_pp:
+
+            item_count = type_pp_item_count_dict[element.getText()]
+
+            # print(counter)
+
+            temp_dict = {}
+
+            for i in range(counter, counter + item_count):
+
+                # 因為 albania_data2 的數量是 item_count * 3，所以 i 要 x3 然後 +1, +2
+                temp_dict[crawl_city_data2_pp[i*3].text] = {"Median" : crawl_city_data2_pp[i*3+1].text.replace('\n', '').replace('\xa0', '').replace('\u00a3','').replace('\u00a5',''), "range" : crawl_city_data2_pp[i*3+2].text.replace('\n', '')}
+
+            crawl_city_pp_type_dict[element.getText()] = temp_dict
+
+            counter = counter + item_count
+
         # print(albania_col_type_dict)
 
+        if len(crawl_city_col_type_dict) == 0:
+            empty_cost_of_living.append(e + ' --> ' + current_processing_url_col)
+        if len(crawl_city_pp_type_dict) == 0:
+            empty_property_prices.append(e + ' --> ' + current_processing_url_pp)
+
         crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_city_col_type_dict
+        crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_city_pp_type_dict
 
         crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
+        crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
 
         # print(albania_dict)
 
     print(" <Done>")
     current_proc = current_proc + 1
 
+with open('empty_col_list.txt', 'w') as outfile:
+    for e in empty_cost_of_living:
+        outfile.write(e + '\n')
+with open('empty_pp_list.txt', 'w') as outfile:
+    for e in empty_property_prices:
+        outfile.write(e + '\n')
 
 # print(crawl_country_city_dictionary)
 with open("country_city_dictionary.json", "w") as outfile:

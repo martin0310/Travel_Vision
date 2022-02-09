@@ -1,0 +1,16 @@
+(Canada,Ajax, ON) --> https://www.numbeo.com/cost-of-living/in/Ajax-ON
+(Canada,Brandon, MB) --> https://www.numbeo.com/cost-of-living/in/Brandon-MB
+(Canada,Comox, BC) --> https://www.numbeo.com/cost-of-living/in/Comox-BC
+(Canada,Cornwall, ON) --> https://www.numbeo.com/cost-of-living/in/Cornwall-ON
+(Canada,Fort St John, BC) --> https://www.numbeo.com/cost-of-living/in/Fort-St-John-BC
+(Canada,Langley, BC) --> https://www.numbeo.com/cost-of-living/in/Langley-BC
+(Canada,Lethbridge, AB) --> https://www.numbeo.com/cost-of-living/in/Lethbridge-AB
+(Canada,Nanaimo, BC) --> https://www.numbeo.com/cost-of-living/in/Nanaimo-BC
+(Canada,Rimouski,QC) --> https://www.numbeo.com/cost-of-living/in/RimouskiQC
+(Canada,Rivière-du-Loup) --> https://www.numbeo.com/cost-of-living/in/Rivière-du-Loup
+(Canada,Sault Ste. Marie) --> https://www.numbeo.com/cost-of-living/in/Sault-Ste.-Marie
+(Canada,St. Albert, AB) --> https://www.numbeo.com/cost-of-living/in/St.-Albert-AB
+(Canada,St. John's, Newfoundland and Labrador) --> https://www.numbeo.com/cost-of-living/in/St.-John's-Newfoundland-and-Labrador
+(Canada,St. Paul) --> https://www.numbeo.com/cost-of-living/in/St.-Paul
+(Canada,St. Thomas) --> https://www.numbeo.com/cost-of-living/in/St.-Thomas
+(Canada,Trois-Rivieres, QC) --> https://www.numbeo.com/cost-of-living/in/Trois-Rivieres-QC

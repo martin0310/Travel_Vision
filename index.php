@@ -29,7 +29,7 @@
             <div class="cd-slider-nav">
               <nav class="navbar navbar-expand-lg" id="tm-nav">
                 <a class="navbar-brand" href="index.php"><img src="img/logo.png" width="300px;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbar-supported-content">
@@ -39,7 +39,7 @@
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="2">Search</a>
+                        <a class="nav-link" href="search.php" data-no="2">Search</a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
