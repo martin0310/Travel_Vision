@@ -366,6 +366,10 @@ for e in country_city_tuple_list:
     print(" <Done>")
     current_proc = current_proc + 1
 
+    with open("/home/datavis/numbeo_data/" + e + ".json", "w") as outfile:
+        json_temp = {e : crawl_country_city_dictionary[e]}
+        json.dump(json_temp, outfile)
+
 with open('empty_col_list.txt', 'w') as outfile:
     for e in empty_cost_of_living:
         outfile.write(e + '\n')
@@ -374,8 +378,14 @@ with open('empty_pp_list.txt', 'w') as outfile:
         outfile.write(e + '\n')
 
 # print(crawl_country_city_dictionary)
-with open("country_city_dictionary.json", "w") as outfile:
-    json.dump(crawl_country_city_dictionary, outfile)
+
+# with open("country_city_dictionary.json", "w") as outfile:
+#     json.dump(crawl_country_city_dictionary, outfile)
+
+# for e in crawl_country_city_dictionary:
+#     with open("/home/datavis/numbeo_data/" + e + ".json", "w") as outfile:
+#         json_temp = {e : crawl_country_city_dictionary[e]}
+#         json.dump(json_temp, outfile)
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 '''
 # test code

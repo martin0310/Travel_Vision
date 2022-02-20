@@ -1,3 +1,53 @@
+(Afghanistan,Mazar-i-Sharif) --> https://www.numbeo.com/cost-of-living/in/Mazar-i-Sharif
+(Albania,Kamez (Kamze)) --> https://www.numbeo.com/cost-of-living/in/Kamez-Kamze
+(Andorra,Andorra la Vella) --> https://www.numbeo.com/cost-of-living/in/Andorra-la-Vella
+(Andorra,Sant Julia de Loria) --> https://www.numbeo.com/cost-of-living/in/Sant-Julia-de-Loria
+(Antigua And Barbuda,St. John's) --> https://www.numbeo.com/cost-of-living/in/St.-John's
+(Argentina,Leandro N. Alem) --> https://www.numbeo.com/cost-of-living/in/Leandro-N.-Alem
+(Argentina,Lomas de Zamora) --> https://www.numbeo.com/cost-of-living/in/Lomas-de-Zamora
+(Argentina,Mar del Plata) --> https://www.numbeo.com/cost-of-living/in/Mar-del-Plata
+(Argentina,Oberá) --> https://www.numbeo.com/cost-of-living/in/Oberá
+(Argentina,San Martin de los Andes) --> https://www.numbeo.com/cost-of-living/in/San-Martin-de-los-Andes
+(Argentina,San Salvador de Jujuy) --> https://www.numbeo.com/cost-of-living/in/San-Salvador-de-Jujuy
+(Argentina,Santiago del Estero) --> https://www.numbeo.com/cost-of-living/in/Santiago-del-Estero
+(Australia,Surfers Paradise. Gold Coast. Queensland.) --> https://www.numbeo.com/cost-of-living/in/Surfers-Paradise.-Gold-Coast.-Queensland.
+(Azerbaijan,Nakhchivan (Naxcivan)) --> https://www.numbeo.com/cost-of-living/in/Nakhchivan-Naxcivan
+(Azerbaijan,Shirvan (Ali Bayramli)) --> https://www.numbeo.com/cost-of-living/in/Shirvan-Ali-Bayramli
+(Belarus,Nesvizh (Niasviž)) --> https://www.numbeo.com/cost-of-living/in/Nesvizh-Niasviž
+(Belgium,Braine-l'Alleud) --> https://www.numbeo.com/cost-of-living/in/Braine-l'Alleud
+(Belgium,Heist-op-den-Berg) --> https://www.numbeo.com/cost-of-living/in/Heist-op-den-Berg
+(Belgium,Sint-Niklaas) --> https://www.numbeo.com/cost-of-living/in/Sint-Niklaas
+(Belgium,Sint-Truiden) --> https://www.numbeo.com/cost-of-living/in/Sint-Truiden
+(Brazil,Avaré) --> https://www.numbeo.com/cost-of-living/in/Avaré
+(Brazil,Cachoeirinha) --> https://www.numbeo.com/cost-of-living/in/Cachoeirinha
+(Brazil,Campos dos Goytacazes) --> https://www.numbeo.com/cost-of-living/in/Campos-dos-Goytacazes
+(Brazil,Caxias do Sul) --> https://www.numbeo.com/cost-of-living/in/Caxias-do-Sul
+(Brazil,Codó) --> https://www.numbeo.com/cost-of-living/in/Codó
+(Brazil,Concórdia) --> https://www.numbeo.com/cost-of-living/in/Concórdia
+(Brazil,Duque de Caxias) --> https://www.numbeo.com/cost-of-living/in/Duque-de-Caxias
+(Brazil,Embu das Artes) --> https://www.numbeo.com/cost-of-living/in/Embu-das-Artes
+(Brazil,Feira de Santana) --> https://www.numbeo.com/cost-of-living/in/Feira-de-Santana
+(Brazil,Franco da Rocha) --> https://www.numbeo.com/cost-of-living/in/Franco-da-Rocha
+(Brazil,Itajubá, MG) --> https://www.numbeo.com/cost-of-living/in/Itajubá-MG
+(Brazil,Itaquiraí) --> https://www.numbeo.com/cost-of-living/in/Itaquiraí
+(Brazil,Jacarèzinho) --> https://www.numbeo.com/cost-of-living/in/Jacarèzinho
+(Brazil,Juiz de Fora) --> https://www.numbeo.com/cost-of-living/in/Juiz-de-Fora
+(Brazil,Matão) --> https://www.numbeo.com/cost-of-living/in/Matão
+(Brazil,Mogi das Cruzes) --> https://www.numbeo.com/cost-of-living/in/Mogi-das-Cruzes
+(Brazil,Mossoró) --> https://www.numbeo.com/cost-of-living/in/Mossoró
+(Brazil,Rio de Janeiro) --> https://www.numbeo.com/cost-of-living/in/Rio-de-Janeiro
+(Brazil,Santa Cruz do Sul) --> https://www.numbeo.com/cost-of-living/in/Santa-Cruz-do-Sul
+(Brazil,Sao Luis (São Luís)) --> https://www.numbeo.com/cost-of-living/in/Sao-Luis-São-Luís
+(Brazil,Sao Pedro da Aldeia) --> https://www.numbeo.com/cost-of-living/in/Sao-Pedro-da-Aldeia
+(Brazil,São José dos Campos) --> https://www.numbeo.com/cost-of-living/in/São-José-dos-Campos
+(Brazil,São João del Rei) --> https://www.numbeo.com/cost-of-living/in/São-João-del-Rei
+(Brazil,Três Rios) --> https://www.numbeo.com/cost-of-living/in/Três-Rios
+(British Virgin Islands,Saint Croix (St. Croix)) --> https://www.numbeo.com/cost-of-living/in/Saint-Croix-St.-Croix
+(Bulgaria,Kyustendil) --> https://www.numbeo.com/cost-of-living/in/Kyustendil
+(Bulgaria,Lovech) --> https://www.numbeo.com/cost-of-living/in/Lovech
+(Bulgaria,Pazardzhik) --> https://www.numbeo.com/cost-of-living/in/Pazardzhik
+(Bulgaria,Vratsa) --> https://www.numbeo.com/cost-of-living/in/Vratsa
+(Cambodia,Kampong Thom) --> https://www.numbeo.com/cost-of-living/in/Kampong-Thom
 (Canada,Ajax, ON) --> https://www.numbeo.com/cost-of-living/in/Ajax-ON
 (Canada,Brandon, MB) --> https://www.numbeo.com/cost-of-living/in/Brandon-MB
 (Canada,Comox, BC) --> https://www.numbeo.com/cost-of-living/in/Comox-BC
@@ -14,3 +64,263 @@
 (Canada,St. Paul) --> https://www.numbeo.com/cost-of-living/in/St.-Paul
 (Canada,St. Thomas) --> https://www.numbeo.com/cost-of-living/in/St.-Thomas
 (Canada,Trois-Rivieres, QC) --> https://www.numbeo.com/cost-of-living/in/Trois-Rivieres-QC
+(Chad,N'Djamena) --> https://www.numbeo.com/cost-of-living/in/N'Djamena
+(Chile,San Antonio de Petrel) --> https://www.numbeo.com/cost-of-living/in/San-Antonio-de-Petrel
+(Chile,Vina del Mar) --> https://www.numbeo.com/cost-of-living/in/Vina-del-Mar
+(China,Qingdao, Shandong) --> https://www.numbeo.com/cost-of-living/in/Qingdao-Shandong
+(Colombia,San Juan de Pasto) --> https://www.numbeo.com/cost-of-living/in/San-Juan-de-Pasto
+(Congo,Pointe-Noire) --> https://www.numbeo.com/cost-of-living/in/Pointe-Noire
+(Cuba,Santiago de Cuba) --> https://www.numbeo.com/cost-of-living/in/Santiago-de-Cuba
+(Czech Republic,Jablonec nad Nisou) --> https://www.numbeo.com/cost-of-living/in/Jablonec-nad-Nisou
+(Czech Republic,Mníšek pod Brdy) --> https://www.numbeo.com/cost-of-living/in/Mníšek-pod-Brdy
+(Czech Republic,Staňkov) --> https://www.numbeo.com/cost-of-living/in/Staňkov
+(Dominica,Fond St. Jean) --> https://www.numbeo.com/cost-of-living/in/Fond-St.-Jean
+(Dominican Republic,Bajos de Haina) --> https://www.numbeo.com/cost-of-living/in/Bajos-de-Haina
+(Dominican Republic,San Juan de la Maguana) --> https://www.numbeo.com/cost-of-living/in/San-Juan-de-la-Maguana
+(Dominican Republic,Santa Cruz del Seibo) --> https://www.numbeo.com/cost-of-living/in/Santa-Cruz-del-Seibo
+(Dominican Republic,Santiago de los Caballeros) --> https://www.numbeo.com/cost-of-living/in/Santiago-de-los-Caballeros
+(Egypt,Mersa Matruh) --> https://www.numbeo.com/cost-of-living/in/Mersa-Matruh
+(El Salvador,Candelaria de la Frontera) --> https://www.numbeo.com/cost-of-living/in/Candelaria-de-la-Frontera
+(Ethiopia,Adama (Nazret, Nazareth)) --> https://www.numbeo.com/cost-of-living/in/Adama-Nazret-Nazareth
+(Finland,Jakobstad (Pietarsaari)) --> https://www.numbeo.com/cost-of-living/in/Jakobstad-Pietarsaari
+(France,Aix-en-Provence) --> https://www.numbeo.com/cost-of-living/in/Aix-en-Provence
+(France,Asnières-sur-Seine) --> https://www.numbeo.com/cost-of-living/in/Asnières-sur-Seine
+(France,Boulogne-Billancourt) --> https://www.numbeo.com/cost-of-living/in/Boulogne-Billancourt
+(Georgia,Batumi, Ajara) --> https://www.numbeo.com/cost-of-living/in/Batumi-Ajara
+(Germany,Freiburg im Breisgau) --> https://www.numbeo.com/cost-of-living/in/Freiburg-im-Breisgau
+(Germany,Fürstenfeldbruck) --> https://www.numbeo.com/cost-of-living/in/Fürstenfeldbruck
+(Germany,Füssen) --> https://www.numbeo.com/cost-of-living/in/Füssen
+(Germany,Goettingen) --> https://www.numbeo.com/cost-of-living/in/Goettingen
+(Germany,Muelheim an der Ruhr) --> https://www.numbeo.com/cost-of-living/in/Muelheim-an-der-Ruhr
+(Germany,Offenbach am Main) --> https://www.numbeo.com/cost-of-living/in/Offenbach-am-Main
+(Germany,Wangen im Allgäu) --> https://www.numbeo.com/cost-of-living/in/Wangen-im-Allgäu
+(Germany,Weiden I.d.opf.) --> https://www.numbeo.com/cost-of-living/in/Weiden-I.d.opf.
+(Germany,Weimar, Thüringen) --> https://www.numbeo.com/cost-of-living/in/Weimar-Thüringen
+(Germany,Wolfenbüttel) --> https://www.numbeo.com/cost-of-living/in/Wolfenbüttel
+(Greece,Agios Nikolaos) --> https://www.numbeo.com/cost-of-living/in/Agios-Nikolaos
+(Greece,Alexandroupoli) --> https://www.numbeo.com/cost-of-living/in/Alexandroupoli
+(Grenada,St. George's) --> https://www.numbeo.com/cost-of-living/in/St.-George's
+(Guam,Hagåtña) --> https://www.numbeo.com/cost-of-living/in/Hagåtña
+(Guyana,Vreed en Hoop) --> https://www.numbeo.com/cost-of-living/in/Vreed-en-Hoop
+(Haiti,Port-au-Prince) --> https://www.numbeo.com/cost-of-living/in/Port-au-Prince
+(Hungary,Hodmezovasarhely (Hódmezővásárhely)) --> https://www.numbeo.com/cost-of-living/in/Hodmezovasarhely-Hódmezővásárhely
+(Hungary,Törökbálint) --> https://www.numbeo.com/cost-of-living/in/Törökbálint
+(Hungary,Üröm) --> https://www.numbeo.com/cost-of-living/in/Üröm
+(India,Bharuch, Gujarat) --> https://www.numbeo.com/cost-of-living/in/Bharuch-Gujarat
+(India,Dhūlia) --> https://www.numbeo.com/cost-of-living/in/Dhūlia
+(India,Howrah (Haora)) --> https://www.numbeo.com/cost-of-living/in/Howrah-Haora
+(India,Karīmnagar) --> https://www.numbeo.com/cost-of-living/in/Karīmnagar
+(India,Muradabad (Moradabad)) --> https://www.numbeo.com/cost-of-living/in/Muradabad-Moradabad
+(India,Nagercoil, Tamil Nadu) --> https://www.numbeo.com/cost-of-living/in/Nagercoil-Tamil-Nadu
+(India,Sahāranpur) --> https://www.numbeo.com/cost-of-living/in/Sahāranpur
+(India,Tiruppūr) --> https://www.numbeo.com/cost-of-living/in/Tiruppūr
+(Iran,Ahvaz) --> https://www.numbeo.com/cost-of-living/in/Ahvaz
+(Iran,Bojnord) --> https://www.numbeo.com/cost-of-living/in/Bojnord
+(Iraq,Dohuk (Duhok)) --> https://www.numbeo.com/cost-of-living/in/Dohuk-Duhok
+(Israel,Ashkelon) --> https://www.numbeo.com/cost-of-living/in/Ashkelon
+(Israel,Beit Shemesh) --> https://www.numbeo.com/cost-of-living/in/Beit-Shemesh
+(Israel,Eilat) --> https://www.numbeo.com/cost-of-living/in/Eilat
+(Israel,Givatayim) --> https://www.numbeo.com/cost-of-living/in/Givatayim
+(Israel,Kiryat Gat) --> https://www.numbeo.com/cost-of-living/in/Kiryat-Gat
+(Israel,Ramat HaSharon) --> https://www.numbeo.com/cost-of-living/in/Ramat-HaSharon
+(Italy,Cisterna di Latina) --> https://www.numbeo.com/cost-of-living/in/Cisterna-di-Latina
+(Italy,Forli) --> https://www.numbeo.com/cost-of-living/in/Forli
+(Italy,Palazzo San Gervasio) --> https://www.numbeo.com/cost-of-living/in/Palazzo-San-Gervasio
+(Japan,Suginami-ku) --> https://www.numbeo.com/cost-of-living/in/Suginami-ku
+(Jersey,St. John) --> https://www.numbeo.com/cost-of-living/in/St.-John
+(Kazakhstan,Kostanay (Kustanay)) --> https://www.numbeo.com/cost-of-living/in/Kostanay-Kustanay
+(Kosovo (Disputed Territory),Dečani) --> https://www.numbeo.com/cost-of-living/in/Dečani
+(Kosovo (Disputed Territory),Djeneral Janković) --> https://www.numbeo.com/cost-of-living/in/Djeneral-Janković
+(Kosovo (Disputed Territory),Gjakova (Djakovica)) --> https://www.numbeo.com/cost-of-living/in/Gjakova-Djakovica
+(Kosovo (Disputed Territory),Gjilan (Gnjilane)) --> https://www.numbeo.com/cost-of-living/in/Gjilan-Gnjilane
+(Kosovo (Disputed Territory),Gracanica) --> https://www.numbeo.com/cost-of-living/in/Gracanica
+(Kosovo (Disputed Territory),Istok) --> https://www.numbeo.com/cost-of-living/in/Istok
+(Kosovo (Disputed Territory),Kačanik) --> https://www.numbeo.com/cost-of-living/in/Kačanik
+(Kosovo (Disputed Territory),Leposavić) --> https://www.numbeo.com/cost-of-living/in/Leposavić
+(Kosovo (Disputed Territory),Mališevo) --> https://www.numbeo.com/cost-of-living/in/Mališevo
+(Kosovo (Disputed Territory),Mitrovica) --> https://www.numbeo.com/cost-of-living/in/Mitrovica
+(Kosovo (Disputed Territory),Pec (Peja)) --> https://www.numbeo.com/cost-of-living/in/Pec-Peja
+(Kosovo (Disputed Territory),Podujevo (Podujeva)) --> https://www.numbeo.com/cost-of-living/in/Podujevo-Podujeva
+(Kosovo (Disputed Territory),Skendaraj) --> https://www.numbeo.com/cost-of-living/in/Skendaraj
+(Kosovo (Disputed Territory),Vitina) --> https://www.numbeo.com/cost-of-living/in/Vitina
+(Kuwait,Al Wafrah) --> https://www.numbeo.com/cost-of-living/in/Al-Wafrah
+(Kyrgyzstan,Cholpon-Ata) --> https://www.numbeo.com/cost-of-living/in/Cholpon-Ata
+(Laos,Pakse) --> https://www.numbeo.com/cost-of-living/in/Pakse
+(Lebanon,Baalbek) --> https://www.numbeo.com/cost-of-living/in/Baalbek
+(Lebanon,Jal el Dib) --> https://www.numbeo.com/cost-of-living/in/Jal-el-Dib
+(Libya,Derna (Darnah)) --> https://www.numbeo.com/cost-of-living/in/Derna-Darnah
+(Libya,Marj) --> https://www.numbeo.com/cost-of-living/in/Marj
+(Libya,Misratah (Misrata)) --> https://www.numbeo.com/cost-of-living/in/Misratah-Misrata
+(Libya,Mişrātah) --> https://www.numbeo.com/cost-of-living/in/Mişrātah
+(Libya,Sabratha (Sabratah)) --> https://www.numbeo.com/cost-of-living/in/Sabratha-Sabratah
+(Libya,Sirte (Surt)) --> https://www.numbeo.com/cost-of-living/in/Sirte-Surt
+(Libya,Tarhuna (Tarhunah)) --> https://www.numbeo.com/cost-of-living/in/Tarhuna-Tarhunah
+(Libya,Ubari (Awbari)) --> https://www.numbeo.com/cost-of-living/in/Ubari-Awbari
+(Libya,Zuwara (Zuwarah)) --> https://www.numbeo.com/cost-of-living/in/Zuwara-Zuwarah
+(Luxembourg,Esch-sur-Alzette) --> https://www.numbeo.com/cost-of-living/in/Esch-sur-Alzette
+(Malaysia,Cyberjaya, Selangor) --> https://www.numbeo.com/cost-of-living/in/Cyberjaya-Selangor
+(Malta,St. Julians (San Ġiljan)) --> https://www.numbeo.com/cost-of-living/in/St.-Julians-San-Ġiljan
+(Mauritius,Beau Bassin-Rose Hill) --> https://www.numbeo.com/cost-of-living/in/Beau-Bassin-Rose-Hill
+(Mauritius,Flic en Flac) --> https://www.numbeo.com/cost-of-living/in/Flic-en-Flac
+(Mauritius,Fond du Sac) --> https://www.numbeo.com/cost-of-living/in/Fond-du-Sac
+(Mexico,Cabo San Lucas, Baja California Sur) --> https://www.numbeo.com/cost-of-living/in/Cabo-San-Lucas-Baja-California-Sur
+(Mexico,Ciudad Obregon) --> https://www.numbeo.com/cost-of-living/in/Ciudad-Obregon
+(Mexico,León de los Aldama) --> https://www.numbeo.com/cost-of-living/in/León-de-los-Aldama
+(Mexico,Oaxaca de Juarez) --> https://www.numbeo.com/cost-of-living/in/Oaxaca-de-Juarez
+(Mexico,San Cristobal de las Casas) --> https://www.numbeo.com/cost-of-living/in/San-Cristobal-de-las-Casas
+(Mexico,Texcoco de Mora) --> https://www.numbeo.com/cost-of-living/in/Texcoco-de-Mora
+(Mongolia,Nalaikh (Nalayh)) --> https://www.numbeo.com/cost-of-living/in/Nalaikh-Nalayh
+(Morocco,Fes (Fez)) --> https://www.numbeo.com/cost-of-living/in/Fes-Fez
+(Morocco,Ifrane (Ifran)) --> https://www.numbeo.com/cost-of-living/in/Ifrane-Ifran
+(Morocco,Temara) --> https://www.numbeo.com/cost-of-living/in/Temara
+(Mozambique,Xai-Xai) --> https://www.numbeo.com/cost-of-living/in/Xai-Xai
+(Nepal,Birgunj (Birganj)) --> https://www.numbeo.com/cost-of-living/in/Birgunj-Birganj
+(Nepal,Dadeldhurā) --> https://www.numbeo.com/cost-of-living/in/Dadeldhurā
+(Nepal,Janakpurdham (Janakpur)) --> https://www.numbeo.com/cost-of-living/in/Janakpurdham-Janakpur
+(Nepal,Mahendranagar (Bhimdatta)) --> https://www.numbeo.com/cost-of-living/in/Mahendranagar-Bhimdatta
+(Nepal,Nepalgunj (Nepalganj)) --> https://www.numbeo.com/cost-of-living/in/Nepalgunj-Nepalganj
+(New Zealand,Whanganui) --> https://www.numbeo.com/cost-of-living/in/Whanganui
+(Nicaragua,San Juan del Sur) --> https://www.numbeo.com/cost-of-living/in/San-Juan-del-Sur
+(Nicaragua,San Rafael del Sur) --> https://www.numbeo.com/cost-of-living/in/San-Rafael-del-Sur
+(North Macedonia,Brvenica) --> https://www.numbeo.com/cost-of-living/in/Brvenica
+(North Macedonia,Debar) --> https://www.numbeo.com/cost-of-living/in/Debar
+(North Macedonia,Delcevo) --> https://www.numbeo.com/cost-of-living/in/Delcevo
+(North Macedonia,Demir Kapija) --> https://www.numbeo.com/cost-of-living/in/Demir-Kapija
+(North Macedonia,Gevgelija) --> https://www.numbeo.com/cost-of-living/in/Gevgelija
+(North Macedonia,Gostivar) --> https://www.numbeo.com/cost-of-living/in/Gostivar
+(North Macedonia,Kavadarci) --> https://www.numbeo.com/cost-of-living/in/Kavadarci
+(North Macedonia,Kicevo) --> https://www.numbeo.com/cost-of-living/in/Kicevo
+(North Macedonia,Kocani) --> https://www.numbeo.com/cost-of-living/in/Kocani
+(North Macedonia,Kriva Palanka) --> https://www.numbeo.com/cost-of-living/in/Kriva-Palanka
+(North Macedonia,Lipkovo) --> https://www.numbeo.com/cost-of-living/in/Lipkovo
+(North Macedonia,Negotino) --> https://www.numbeo.com/cost-of-living/in/Negotino
+(North Macedonia,Radovis) --> https://www.numbeo.com/cost-of-living/in/Radovis
+(North Macedonia,Resen) --> https://www.numbeo.com/cost-of-living/in/Resen
+(North Macedonia,Struga) --> https://www.numbeo.com/cost-of-living/in/Struga
+(North Macedonia,Strumica) --> https://www.numbeo.com/cost-of-living/in/Strumica
+(North Macedonia,Sveti Nikole) --> https://www.numbeo.com/cost-of-living/in/Sveti-Nikole
+(North Macedonia,Veles) --> https://www.numbeo.com/cost-of-living/in/Veles
+(Norway,Mo i Rana) --> https://www.numbeo.com/cost-of-living/in/Mo-i-Rana
+(Palestine,Al-birah) --> https://www.numbeo.com/cost-of-living/in/Al-birah
+(Palestine,Bethlehem) --> https://www.numbeo.com/cost-of-living/in/Bethlehem
+(Palestine,Dura) --> https://www.numbeo.com/cost-of-living/in/Dura
+(Palestine,Hebron) --> https://www.numbeo.com/cost-of-living/in/Hebron
+(Palestine,Husan) --> https://www.numbeo.com/cost-of-living/in/Husan
+(Palestine,Nablus) --> https://www.numbeo.com/cost-of-living/in/Nablus
+(Palestine,Tulkarm) --> https://www.numbeo.com/cost-of-living/in/Tulkarm
+(Paraguay,Ciudad del Este) --> https://www.numbeo.com/cost-of-living/in/Ciudad-del-Este
+(Peru,Cerro de Pasco) --> https://www.numbeo.com/cost-of-living/in/Cerro-de-Pasco
+(Peru,Huánuco) --> https://www.numbeo.com/cost-of-living/in/Huánuco
+(Philippines,Lapu-Lapu) --> https://www.numbeo.com/cost-of-living/in/Lapu-Lapu
+(Philippines,San Jose del Monte) --> https://www.numbeo.com/cost-of-living/in/San-Jose-del-Monte
+(Poland,Brwinów) --> https://www.numbeo.com/cost-of-living/in/Brwinów
+(Poland,Elk (Ełk)) --> https://www.numbeo.com/cost-of-living/in/Elk-Ełk
+(Poland,Kudowa-Zdrój) --> https://www.numbeo.com/cost-of-living/in/Kudowa-Zdrój
+(Poland,Żyrardów) --> https://www.numbeo.com/cost-of-living/in/Żyrardów
+(Portugal,Alcobaça) --> https://www.numbeo.com/cost-of-living/in/Alcobaça
+(Portugal,Angra do Heroismo) --> https://www.numbeo.com/cost-of-living/in/Angra-do-Heroismo
+(Portugal,Rio de Mouro) --> https://www.numbeo.com/cost-of-living/in/Rio-de-Mouro
+(Portugal,Vila Nova de Gaia) --> https://www.numbeo.com/cost-of-living/in/Vila-Nova-de-Gaia
+(Reunion,L'Etang-Sale) --> https://www.numbeo.com/cost-of-living/in/L'Etang-Sale
+(Reunion,Saint-Denis) --> https://www.numbeo.com/cost-of-living/in/Saint-Denis
+(Reunion,Saint-Joseph) --> https://www.numbeo.com/cost-of-living/in/Saint-Joseph
+(Reunion,Saint-Leu) --> https://www.numbeo.com/cost-of-living/in/Saint-Leu
+(Reunion,Saint-Pierre) --> https://www.numbeo.com/cost-of-living/in/Saint-Pierre
+(Romania,Bolintin-Vale) --> https://www.numbeo.com/cost-of-living/in/Bolintin-Vale
+(Romania,Cluj-Napoca) --> https://www.numbeo.com/cost-of-living/in/Cluj-Napoca
+(Romania,Drobeta-Turnu Severin) --> https://www.numbeo.com/cost-of-living/in/Drobeta-Turnu-Severin
+(Russia,Naberezhnye Chelny) --> https://www.numbeo.com/cost-of-living/in/Naberezhnye-Chelny
+(Russia,Shchelkovo (Shchyolkovo)) --> https://www.numbeo.com/cost-of-living/in/Shchelkovo-Shchyolkovo
+(Russia,Yoshkar-Ola) --> https://www.numbeo.com/cost-of-living/in/Yoshkar-Ola
+(Slovakia,Banovce nad Bebravou) --> https://www.numbeo.com/cost-of-living/in/Banovce-nad-Bebravou
+(Slovakia,Dubnica nad Vahom) --> https://www.numbeo.com/cost-of-living/in/Dubnica-nad-Vahom
+(Slovakia,Nove Mesto nad Vahom) --> https://www.numbeo.com/cost-of-living/in/Nove-Mesto-nad-Vahom
+(Slovakia,Trebišov) --> https://www.numbeo.com/cost-of-living/in/Trebišov
+(Slovenia,Zagorje ob Savi) --> https://www.numbeo.com/cost-of-living/in/Zagorje-ob-Savi
+(South Korea,Pyeongtaek) --> https://www.numbeo.com/cost-of-living/in/Pyeongtaek
+(South Korea,Suji-gu) --> https://www.numbeo.com/cost-of-living/in/Suji-gu
+(Spain,Calp (Calpe)) --> https://www.numbeo.com/cost-of-living/in/Calp-Calpe
+(Spain,Castello de la Plana) --> https://www.numbeo.com/cost-of-living/in/Castello-de-la-Plana
+(Spain,Chiclana de la Frontera) --> https://www.numbeo.com/cost-of-living/in/Chiclana-de-la-Frontera
+(Spain,Cornella de Llobregat) --> https://www.numbeo.com/cost-of-living/in/Cornella-de-Llobregat
+(Spain,Figueres) --> https://www.numbeo.com/cost-of-living/in/Figueres
+(Spain,L'Hospitalet de Llobregat) --> https://www.numbeo.com/cost-of-living/in/L'Hospitalet-de-Llobregat
+(Spain,Las Palmas de Gran Canaria) --> https://www.numbeo.com/cost-of-living/in/Las-Palmas-de-Gran-Canaria
+(Spain,Medina del Campo) --> https://www.numbeo.com/cost-of-living/in/Medina-del-Campo
+(Spain,Ourense (Ourense)) --> https://www.numbeo.com/cost-of-living/in/Ourense-Ourense
+(Spain,Palma de Mallorca) --> https://www.numbeo.com/cost-of-living/in/Palma-de-Mallorca
+(Spain,Puerto del Rosario) --> https://www.numbeo.com/cost-of-living/in/Puerto-del-Rosario
+(Spain,Santa Cruz de Tenerife) --> https://www.numbeo.com/cost-of-living/in/Santa-Cruz-de-Tenerife
+(Spain,Seville (Sevilla)) --> https://www.numbeo.com/cost-of-living/in/Seville-Sevilla
+(Spain,Vitoria-Gasteiz) --> https://www.numbeo.com/cost-of-living/in/Vitoria-Gasteiz
+(Sri Lanka,Dehiwala-Mount Lavinia) --> https://www.numbeo.com/cost-of-living/in/Dehiwala-Mount-Lavinia
+(Sri Lanka,Sri Jayawardenepura Kotte) --> https://www.numbeo.com/cost-of-living/in/Sri-Jayawardenepura-Kotte
+(Sweden,Angelholm (Ängelholm)) --> https://www.numbeo.com/cost-of-living/in/Angelholm-Ängelholm
+(Sweden,Bollnäs) --> https://www.numbeo.com/cost-of-living/in/Bollnäs
+(Sweden,Höllviken) --> https://www.numbeo.com/cost-of-living/in/Höllviken
+(Switzerland,La Chaux-de-Fonds) --> https://www.numbeo.com/cost-of-living/in/La-Chaux-de-Fonds
+(Switzerland,Münchwilen) --> https://www.numbeo.com/cost-of-living/in/Münchwilen
+(Switzerland,St. Gallen) --> https://www.numbeo.com/cost-of-living/in/St.-Gallen
+(Switzerland,St. Moritz) --> https://www.numbeo.com/cost-of-living/in/St.-Moritz
+(Switzerland,Yverdon-les-Bains) --> https://www.numbeo.com/cost-of-living/in/Yverdon-les-Bains
+(Syria,Al-Qusayr) --> https://www.numbeo.com/cost-of-living/in/Al-Qusayr
+(Syria,Al-Qutayfah) --> https://www.numbeo.com/cost-of-living/in/Al-Qutayfah
+(Syria,Hama) --> https://www.numbeo.com/cost-of-living/in/Hama
+(Syria,Homs) --> https://www.numbeo.com/cost-of-living/in/Homs
+(Taiwan,Miaoli) --> https://www.numbeo.com/cost-of-living/in/Miaoli
+(Taiwan,Zhongli City (Jhongli)) --> https://www.numbeo.com/cost-of-living/in/Zhongli-City-Jhongli
+(Tanzania,Dar es Salaam) --> https://www.numbeo.com/cost-of-living/in/Dar-es-Salaam
+(Trinidad And Tobago,Port of Spain) --> https://www.numbeo.com/cost-of-living/in/Port-of-Spain
+(Tunisia,Aryanah (Ariana)) --> https://www.numbeo.com/cost-of-living/in/Aryanah-Ariana
+(Tunisia,Beja (Bajah)) --> https://www.numbeo.com/cost-of-living/in/Beja-Bajah
+(Tunisia,Le Bardo) --> https://www.numbeo.com/cost-of-living/in/Le-Bardo
+(Tunisia,M'saken (Masakin)) --> https://www.numbeo.com/cost-of-living/in/M'saken-Masakin
+(Tunisia,Nabeul (Nabul)) --> https://www.numbeo.com/cost-of-living/in/Nabeul-Nabul
+(Tunisia,Tataouine (Tatawin)) --> https://www.numbeo.com/cost-of-living/in/Tataouine-Tatawin
+(Turkey,İstanbul) --> https://www.numbeo.com/cost-of-living/in/İstanbul
+(Turkey,İzmit) --> https://www.numbeo.com/cost-of-living/in/İzmit
+(Turkmenistan,Abadan) --> https://www.numbeo.com/cost-of-living/in/Abadan
+(Uganda,Busembatya (Busembatia)) --> https://www.numbeo.com/cost-of-living/in/Busembatya-Busembatia
+(Ukraine,Dnipro) --> https://www.numbeo.com/cost-of-living/in/Dnipro
+(Ukraine,Kiev (Kyiv)) --> https://www.numbeo.com/cost-of-living/in/Kiev-Kyiv
+(Ukraine,Kostiantynivka) --> https://www.numbeo.com/cost-of-living/in/Kostiantynivka
+(Ukraine,Kropyvnytskyi (Kirovohrad)) --> https://www.numbeo.com/cost-of-living/in/Kropyvnytskyi-Kirovohrad
+(Ukraine,Lutsk) --> https://www.numbeo.com/cost-of-living/in/Lutsk
+(Ukraine,Lysychansk) --> https://www.numbeo.com/cost-of-living/in/Lysychansk
+(Ukraine,Mykolaiv) --> https://www.numbeo.com/cost-of-living/in/Mykolaiv
+(Ukraine,Odessa (Odesa)) --> https://www.numbeo.com/cost-of-living/in/Odessa-Odesa
+(Ukraine,Uman) --> https://www.numbeo.com/cost-of-living/in/Uman
+(Ukraine,Vinnytsia) --> https://www.numbeo.com/cost-of-living/in/Vinnytsia
+(United Arab Emirates,Ras al-Khaimah) --> https://www.numbeo.com/cost-of-living/in/Ras-al-Khaimah
+(United Kingdom,Abingdon-on-Thames) --> https://www.numbeo.com/cost-of-living/in/Abingdon-on-Thames
+(United Kingdom,Bexhill) --> https://www.numbeo.com/cost-of-living/in/Bexhill
+(United Kingdom,King's Lynn) --> https://www.numbeo.com/cost-of-living/in/King's-Lynn
+(United Kingdom,Kingston upon Hull) --> https://www.numbeo.com/cost-of-living/in/Kingston-upon-Hull
+(United Kingdom,Kingston upon Thames) --> https://www.numbeo.com/cost-of-living/in/Kingston-upon-Thames
+(United Kingdom,Newcastle upon Tyne) --> https://www.numbeo.com/cost-of-living/in/Newcastle-upon-Tyne
+(United Kingdom,Shrewsbury, Shropshire) --> https://www.numbeo.com/cost-of-living/in/Shrewsbury-Shropshire
+(United Kingdom,Southend-on-Sea) --> https://www.numbeo.com/cost-of-living/in/Southend-on-Sea
+(United Kingdom,St. Andrews) --> https://www.numbeo.com/cost-of-living/in/St.-Andrews
+(United Kingdom,Stockton-on-Tees) --> https://www.numbeo.com/cost-of-living/in/Stockton-on-Tees
+(United Kingdom,Stoke-on-Trent) --> https://www.numbeo.com/cost-of-living/in/Stoke-on-Trent
+(United States,Addison IL) --> https://www.numbeo.com/cost-of-living/in/Addison-I
+(United States,Arden-Arcade, CA) --> https://www.numbeo.com/cost-of-living/in/Arden-Arcade
+(United States,Bloomfield, NJ) --> https://www.numbeo.com/cost-of-living/in/Bloomfield
+(United States,Breckenridge,TX) --> https://www.numbeo.com/cost-of-living/in/Breckenridge
+(United States,Brookings) --> https://www.numbeo.com/cost-of-living/in/Brooking
+(United States,Clovis,  NM) --> https://www.numbeo.com/cost-of-living/in/Clovis
+(United States,Harrisonburg va) --> https://www.numbeo.com/cost-of-living/in/Harrisonburg-v
+(United States,Ludington) --> https://www.numbeo.com/cost-of-living/in/Ludingto
+(United States,Mount Vernon) --> https://www.numbeo.com/cost-of-living/in/Mount-Verno
+(United States,Muscatine) --> https://www.numbeo.com/cost-of-living/in/Muscatin
+(United States,Old Bridge) --> https://www.numbeo.com/cost-of-living/in/Old-Bridg
+(United States,Ontario,CA) --> https://www.numbeo.com/cost-of-living/in/Ontario
+(United States,Port Angeles) --> https://www.numbeo.com/cost-of-living/in/Port-Angele
+(United States,St. Augustine, FL) --> https://www.numbeo.com/cost-of-living/in/St.-Augustine
+(United States,Sterling) --> https://www.numbeo.com/cost-of-living/in/Sterlin
+(United States,Tomball TX) --> https://www.numbeo.com/cost-of-living/in/Tomball-T
+(United States,Tualtin,  OR) --> https://www.numbeo.com/cost-of-living/in/Tualtin
+(United States,Winston-Salem, NC) --> https://www.numbeo.com/cost-of-living/in/Winston-Salem
+(United States,gideon mo) --> https://www.numbeo.com/cost-of-living/in/gideon-m
+(Venezuela,Ocumare del Tuy) --> https://www.numbeo.com/cost-of-living/in/Ocumare-del-Tuy
+(Venezuela,Puerto la Cruz) --> https://www.numbeo.com/cost-of-living/in/Puerto-la-Cruz

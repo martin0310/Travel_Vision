@@ -9,6 +9,7 @@ df.show(100)
 aaa = df.select("Country (or dependency)")
 
 listaaa = aaa.toJSON().collect()
+print(type(listaaa))
 listdictaaa = []
 
 for e in listaaa:
