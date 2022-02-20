@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+<?php
+        // $spark_test_file = fopen("population_by_country_2020.csv", "r") or die("Unable to open file!");
+        // echo fread($spark_test_file, 1024);
+        // echo "hello";
+        // fclose($spark_test_file);
+        // echo "close";
+        
+        //test connect php file with python file 
+        
+        // $country_city = "(Norway,Bodo)";
+        // // $country_city = '(Afghanistan,not_a_city)';
+        // // $command = escapeshellcmd("python3 /var/www/html/spark_test.py {$country_city}");
+        // $command = escapeshellcmd("python3 /var/www/html/spark_test.py $country_city");
+        // // $country_city=escapeshellarg($country_city);
+        // // $output = shell_exec($command);
+        // $output = shell_exec($command);
+        // echo $output;
+
+?>
+
 <html lang="en">
 
 <head>
