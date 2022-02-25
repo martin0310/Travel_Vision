@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: #9F6;
+    color: rgb(241, 240, 145);
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -31,15 +31,17 @@ a:hover {
 }
 
 p {
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 h2 {
     font-size: 1.8rem;
 }
 
+
+
 .highlight {
-    color: #99FF66;
+    color: rgb(241, 240, 145);
 }
 
 .page-container {
@@ -55,20 +57,20 @@ h2 {
 }
 
 .btn {
-    font-size: 1.3rem;
+    font-size: 12px;
     padding: 13px 23px;
     border-radius: 0;
 }
 
 .btn-primary {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
     color: #333;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: #5cac38;
+    color: rgb(241, 240, 145);
     background-color: white;
 }
 
@@ -150,13 +152,13 @@ h2 {
 
 .navbar .navbar-nav .nav-item.selected .nav-link,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #99FF66;
-    border-bottom: 1px solid #99FF66;
+    color: rgb(241, 240, 145);
+    border-bottom: 1px solid rgb(241, 240, 145);
 }
 
 .cd-slider-nav li.selected a+.circle,
 .navbar .navbar-nav .nav-item .nav-link:hover+.circle {
-    background-color: #99FF66;
+    background-color: rgb(241, 240, 145);
 }
 
 .navbar-toggler-icon {
@@ -177,7 +179,7 @@ h2 {
 
 .tm-link-white:hover,
 .tm-link-white:focus {
-    color: #99FF66;
+    color: rgb(241, 240, 145);
 }
 
 .cd-hero-slider {
@@ -485,7 +487,7 @@ figure.effect-julia:hover p {
 }
 
 .form-control:focus {
-    border-bottom: 1px solid #99FF66;
+    border-bottom: 1px solid rgb(241, 240, 145);
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -775,3 +777,35 @@ figure.effect-julia:hover p {
 
 
 /*============ Preloader ends ==================================*/
+
+
+.btn1 {
+    font-size: 1.3rem;
+    padding: 13px 23px;
+    border-radius: 0;
+}
+
+.btn1-primary {
+    background-color: white;
+    border: none;
+    color: #333;
+}
+
+.tm1-intro-btn {
+    margin-top: 25px;
+}
+
+/*New*/
+.search{border:0;
+    background-color:#003C9D;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    width:50px;
+    height:25px;}
+  
+.search-hover{
+    color:#003C9D;
+    background-color:#fff;
+    border:2px #003C9D solid;
+  }

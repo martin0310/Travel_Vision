@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <?php
         // $spark_test_file = fopen("population_by_country_2020.csv", "r") or die("Unable to open file!");
         // echo fread($spark_test_file, 1024);
@@ -6,20 +7,18 @@
         // fclose($spark_test_file);
         // echo "close";
         
-        //test connect php file with python file 
+        // test connect php file with python file 
         
         // $country_city = "(Norway,Bodo)";
-        // // $country_city = '(Afghanistan,not_a_city)';
-        // // $command = escapeshellcmd("python3 /var/www/html/spark_test.py {$country_city}");
+        // $country_city = '(Afghanistan,not_a_city)';
+        // $command = escapeshellcmd("python3 /var/www/html/spark_test.py {$country_city}");
         // $command = escapeshellcmd("python3 /var/www/html/spark_test.py $country_city");
-        // // $country_city=escapeshellarg($country_city);
-        // // $output = shell_exec($command);
+        // $country_city=escapeshellarg($country_city);
+        // $output = shell_exec($command);
         // $output = shell_exec($command);
         // echo $output;
 
 ?>
-
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -41,7 +40,7 @@ https://templatemo.com/tm-560-astro-motion
 
 <body>
     <video autoplay muted loop id="bg-video">
-        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+        <source src="video/Video.mp4" type="video/mp4">
     </video>
     <div class="page-container">
         <div class="container-fluid">
@@ -49,26 +48,26 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="col-xs-12">
                     <div class="cd-slider-nav">
                         <nav class="navbar navbar-expand-lg" id="tm-nav">
-                            <a class="navbar-brand" href="#"><img src="/img/Mark.png" alt="Mark" width="170" height="95"></a>
+                            <a class="navbar-brand" href="index.php"><img src="/img/Mark.png" alt="Mark" width="170" height="95"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                             <div class="collapse navbar-collapse" id="navbar-supported-content">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#0">About</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#0" data-no="2">Health & Epidemic</a>
+                                        <a class="nav-link" href="test_HE.php">Health & Epidemic</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#0" data-no="3">Quality of Life</a>
+                                        <a class="nav-link" href="#0" data-no="2">Quality of Life</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#0" data-no="4">Property Prices</a>
+                                        <a class="nav-link" href="#0" data-no="3">Property Prices</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
@@ -76,7 +75,7 @@ https://templatemo.com/tm-560-astro-motion
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#0" data-no="4">About</a>
+                                        <a class="nav-link" href="#0" data-no="5">Login</a>
                                         <div class="circle"></div>
                                     </li>
                                 </ul>
