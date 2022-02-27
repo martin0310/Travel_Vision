@@ -79,29 +79,22 @@
                                     Choose Taipei：Enter "Taiwan,Taipei"
                                 </h6>
 
-                            <div class="select_country_form">
-                                <form method="get" action="">
+                            <div class="select_country_city_form">
+                                 <form method="post" action="">  <!--set method to POST -->
                                     <select id="country-dropdown" name="country" onchange="coutrySelected(this.value);">
                                         <option value="">---Select country---</option>
                                     </select>
-                                </form>
-                            </div>
-
-                            <div class="select_city_form">
-                                <form method="get" action="">
                                     <select id="city-dropdown" name="city">
                                         <option value="">---Select city---</option>
                                     </select>
+                                    <input type="submit" name="submit" value="Submit the form" class="search search-hover"/>
                                 </form>
-                            </div><br/>
+                            </div>
 
                             <!-- Enter bottom -->
-                            <!--<form action="http://140.123.173.10/test_HE.php">
-                                <input class="search" type="button" value="Search" name="Search" style="width:50px;height:25px;" >
-                            </form><br/>-->
-                            <div class="text-center">
-                                <a href="http://140.123.173.10/test_HE.php" class="search search-hover" >
-                                    Search</a>
+                            <!--<div class="text-center">
+                                <a href="http://140.123.173.10/test_HE.php?myLinkVar=1" class="search search-hover" >
+                                    Search</a>-->
                             </div><br/>
                             
                                     <!-- Map -->
@@ -119,6 +112,7 @@
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
+                            
                     </div>
 
                     <div class="container-fluid">
@@ -191,11 +185,64 @@
             temp_option_tag = document.createElement("option");
             city_name = country_city[country][i];
             temp_option_tag.innerHTML = city_name;
-            temp_option_tag.setAttribute("value", country_name);
+            temp_option_tag.setAttribute("value", city_name);
             city_dropdown.appendChild(temp_option_tag);
         }
     }
 </script>
+
+<?php
+    ini_set('display_errors','1');
+    error_reporting(E_ALL);
+    // ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;)');
+    // curl_setopt($c, CURLOPT_USERAGENT,'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;)');
+    // $html=file_get_contents($url);
+    // // $file = fopen("test_HE.php","r");
+    // // echo $file;
+    // $Doc = new DOMDocument();
+    // $Doc->loadHTMLFile("http://140.123.173.10/test_HE.php;");
+    // echo getTextFromDocument($Doc)."\n";
+
+    // if($_GET['myLinkVar'] == "1") {
+    // if(isset($_POST['country']){
+    // echo $_POST['country'];
+    // echo $_POST['city'];
+    if(isset($_POST['submit'])){
+        $country_city = "";
+        // (United States,Abilene, TX)
+        if(isset($_POST['country'])){
+            // echo $_POST['country'];
+        }
+        else{
+            // echo "no country";
+        }
+
+        if(isset($_POST['city'])){
+            // echo $_POST['city'];
+        }
+        else{
+            // echo "no city";
+        }
+
+        if($_POST['country'] == "United States"){
+            $country_city = "(United States," . $_POST['city'] . ")";
+            // echo $country_city;
+        }
+        else{
+            $country_city = "(" . $_POST['country'] . "," . $_POST['city'] . ")";
+            // echo $_POST['city'];
+        }
+                                    
+        $command = escapeshellcmd("python3 /var/www/html/spark_test.py $country_city");
+        $output = shell_exec($command); 
+        echo $output;
+        // echo gettype($_POST['country']);
+        // echo gettype($_POST['city']);
+    }
+    else{
+        echo "None!!!!";
+    }
+?>
 
 </body>
 

@@ -3,6 +3,13 @@ import json
 import sys
 
 country_city = sys.argv[1]
+
+# 0 program name
+# 1 first parameter
+# 所以從 2 開始
+for i in range(2, len(sys.argv)):
+    country_city = country_city + " " + sys.argv[i]
+
 print(country_city)
 spark = SparkSession.builder.master('local[*]').appName('spark_application').getOrCreate()
 
