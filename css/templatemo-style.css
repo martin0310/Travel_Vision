@@ -38,8 +38,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-
-
 .highlight {
     color: rgb(241, 240, 145);
 }
@@ -102,13 +100,14 @@ h2 {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0rem;
     margin-left: 0px;
 }
 
 .navbar {
     margin-top: 4px;
+    overflow: hidden;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -121,8 +120,8 @@ h2 {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 21px;
-    padding: 15px 27px;
+    font-size: 19px;
+    padding: 12px 30px;
     border-bottom: 1px solid white;
 }
 
@@ -195,15 +194,15 @@ h2 {
 }
 
 .page-width-1 {
-    max-width: 810px;
+    width: 900px;
 }
 
 .page-width-2 {
-    max-width: 912px;
+    width: 900px;
 }
 
 .page-left {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .page-right {
@@ -569,7 +568,7 @@ figure.effect-julia:hover p {
         position: absolute;
         top: 63px;
         right: 0;
-        background: rgb(54 75 96);
+        background: rgb(20, 57, 94);
         border-radius: 5px;
     }
     .navbar .navbar-nav .nav-item {
@@ -780,6 +779,10 @@ figure.effect-julia:hover p {
 
 
 /*New*/
+
+
+/*search button*/
+
 .search {
     font-size: 9px;
     color: rgb(255, 255, 255);
@@ -787,12 +790,128 @@ figure.effect-julia:hover p {
     height: 23px;
     margin-top: 3px;
     margin-left: 5px;
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .search:hover {
     color: #fff3af;
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*banner*/
+
+.w3-content {
+    position: absolute;
+    margin-top: 0em;
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.w3-btn,
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.w3-disabled,
+.w3-btn:disabled,
+.w3-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.w3-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,
+.w3-bar-block .w3-dropdown-click .w3-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+.w3-content button {
+    position: absolute;
+    top: 32%;
+}
+
+.w3-display-right {
+    right: 0
+}
+
+.w3-display-left {
+    left: 0
+}
+
+
+/*導覽列收起*/
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/*隱藏導覽列*/
+
+ul.navbar-nav ul {
+    /*隱藏次選單*/
+    left: 99999px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+ul.navbar-nav li:hover>ul {
+    /* 滑鼠滑入展開次選單*/
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+}
+
+ul.navbar-nav li:hover>ul ul {
+    /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
+    left: 99999px;
+}
+
+ul.navbar-nav ul li:hover>ul {
+    /* 第二層之後的選單展開位置*/
+    left: 90%;
 }

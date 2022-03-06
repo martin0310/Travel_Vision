@@ -15,7 +15,9 @@
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <body>
-
+<?php
+    $datatype="HE";
+?>
     <video autoplay muted loop id="bg-video">
         <source src="video/Video.mp4" type="video/mp4">
     </video>
@@ -25,38 +27,44 @@
                 <div class="col-xs-12">
                     <div class="cd-slider-nav">
                         <nav class="navbar navbar-expand-lg" id="tm-nav">
-                            <a class="navbar-brand" href="index.php"><img src="/img/Mark.png" alt="Mark" width="170"
-                                    height="95"></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <a class="navbar-brand" href="index.php"><img src="/img/Mark.png" alt="Mark" width="190" height="105"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbar-supported-content">
-                                <ul class="navbar-nav mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="0">About</a>
-                                        <div class="circle"></div>
+                            <div class="collapse navbar-collapse drop-down-menu" id="navbar-supported-content">
+                            <ul id="navi" class="navbar-nav mb-2 mb-lg-0">
+                                    <li id="navi_01" class="nav-item">
+                                        <a class="nav-link" href="#0">About</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="1">Health & Epidemic</a>
-                                        <div class="circle"></div>
+
+                                    <li id="navi_02" class="nav-item">
+                                        <a class="nav-link" href="#">Epidemic & Health</a>
+                                        <ul id="a1">
+                                            <li class="nav-item"><a class="nav-link" href="test_HE.php">Epidemic</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="test_HE.php">Health Care</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="2">Quality of Life</a>
-                                        <div class="circle"></div>
+
+                                    <li id="navi_03" class="nav-item">
+                                        <a class="nav-link" href="test_QOL.php">Quality of Life</a>
+                                        <ul>
+                                            <li class="nav-item"><a class="nav-link" href="test_crime.php">Crime</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="test_pollution.php">Pollution</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="test_traffic.php">Traffic</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="3">Property Prices</a>
-                                        <div class="circle"></div>
+
+                                    <li id="navi_04" class="nav-item">
+                                        <a class="nav-link" href="test_PP.php">Property Prices</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="4">Cost of Living</a>
-                                        <div class="circle"></div>
+
+                                    <li id="navi_04" class="nav-item">
+                                        <a class="nav-link" href="test_COL.php">Cost of Living</a>
+
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="" data-no="5">Login</a>
-                                        <div class="circle"></div>
+
+                                    <li id="navi_05" class="nav-item">
+                                        <a class="nav-link" href="#0">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -66,11 +74,8 @@
             </div>
         </div>
         <div class="container-fluid tm-content-container">
-            <ul class="cd-hero-slider mb-0 py-5">
-                <li class="px-3" data-page-no="1">
-                <div class="page-width-1 page-left">
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
-                            <div class="intro-left tm-bg-dark">
+                            <div class="intro-left tm-bg-dark"  style="margin:0 auto">
                                 <h2 class="mb-4">Select A Location</h2>
                                 <h6 class="mb-4">
                                     Please enter a country or a city. <br/><br/>
@@ -81,51 +86,51 @@
 
                             <div class="select_country_city_form">
                                  <form method="post" action="">  <!--set method to POST -->
-                                    <select id="country-dropdown" name="country" onchange="coutrySelected(this.value);">
+                                    <select id="country-dropdown" name="covid_country" onchange="coutrySelected(this.value);">
                                         <option value="">---Select country---</option>
                                     </select>
-                                    <select id="city-dropdown" name="city">
+                                    <!-- <select id="city-dropdown" name="city">
                                         <option value="">---Select city---</option>
-                                    </select>
-                                    <input type="submit" name="submit" value="Submit the form" class="search search-hover"/>
+                                    </select> -->
+                                    <br> <!-- To next line -->
+                                    <label for="start">Start date:</label>
+
+                                    <input type="date" id="start" name="start-time"
+                                        value="2021-01-01"
+                                        min="2021-01-01" max="2021-10-03">
+
+                                    <label for="end">End date:</label>
+
+                                        <input type="date" id="end" name="end-time"
+                                            value="2021-01-01"
+                                            min="2021-01-01" max="2021-10-03">
+                                        
+                                    <input type="submit" name="submit_covid" value="Submit the form" class="search search-hover"/>
                                 </form>
                             </div>
 
-                            <!-- Enter bottom -->
-                            <!--<div class="text-center">
-                                <a href="http://140.123.173.10/test_HE.php?myLinkVar=1" class="search search-hover" >
-                                    Search</a>-->
-                            </div><br/>
-                            
-                                    <!-- Map -->
-                                    <!--<div class="map-outer">
-                                        <div class="gmap-canvas">
-                                            <iframe width="100%" height="400" id="gmap-canvas"
-                                                src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                                frameborder="0" scrolling="no" marginheight="0"
-                                                marginwidth="0"></iframe>
-                                        </div>
-                                    </div>-->
-                            </div>
-                        </div>
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
+                            </div><br/>
                             
-                    </div>
+                            </div>
+                        </div>
+                            
+
+                    <div id="health_care_d3" name="health_care_d3"></div>
 
                     <div class="container-fluid">
                         <footer class="row mx-auto tm-footer">
                             <div class="col-md-6 px-0">
-                                Copyright 2021 Astro Motion Company Limited. All rights reserved.
+                                Call us for any questions.</br>1-800-000-0000
                             </div>
                             <div class="col-md-6 px-0 tm-footer-right">
-                                Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank"
-                                    class="tm-link-white">TemplateMo</a>
+                                 © 2021 by Dept. MIS CCU 
                             </div>
                         </footer>
-                    </div></li></ul>
+                    </div>
                 </div>
         </div>
         <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
@@ -139,110 +144,19 @@
         <script src="js/slick.js"></script>
         <script src="js/templatemo-script.js"></script>
 
-<!-- Dump country-city data to JS -->
 <?php
-    $spark_test_file = fopen("./Crawler/country_city_dict.json", "r") or die("Unable to open file!");
-    $json_text = fread($spark_test_file, filesize("./Crawler/country_city_dict.json"));
-    echo "<script>";
-    echo "country_city = {$json_text}";
-    echo "</script>";
-    fclose($spark_test_file);
-    //echo "close";
+include __DIR__.'/php_files/dump_covid_country_to_js.php';
 ?>
-<!-- <script>console.log(country_city)</script> -->
 
-<!-- Generate Form -->
-<script>
-    // console.log(Object.keys(country_city).length);
-    country_count = Object.keys(country_city).length;
-    for(i = 0; i < country_count; i++) {
-        // console.log(i);
-        temp_option_tag = document.createElement("option");
-        country_name = Object.keys(country_city)[i];
-        temp_option_tag.innerHTML = country_name;
-        temp_option_tag.setAttribute("value", country_name);
-        document.getElementById("country-dropdown").appendChild(temp_option_tag);
-    }
-
-    // if country selected
-    function coutrySelected(country){
-
-        city_dropdown = document.getElementById("city-dropdown");
-            
-        // clear previous options
-        while(city_dropdown.lastChild) {
-            city_dropdown.removeChild(city_dropdown.lastChild);
-        }
-        select_text = "---Select city---";
-        temp_option_tag = document.createElement("option");
-        temp_option_tag.innerHTML = select_text;
-        city_dropdown.appendChild(temp_option_tag);
-
-        city_count = country_city[country].length
-
-        for(i = 0; i < city_count; i++) {
-            // generate new options
-            temp_option_tag = document.createElement("option");
-            city_name = country_city[country][i];
-            temp_option_tag.innerHTML = city_name;
-            temp_option_tag.setAttribute("value", city_name);
-            city_dropdown.appendChild(temp_option_tag);
-        }
-    }
-</script>
+<script src="js_files/gen_covid_country_form.js"></script>
 
 <?php
-    ini_set('display_errors','1');
-    error_reporting(E_ALL);
-    // ini_set('user_agent','Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;)');
-    // curl_setopt($c, CURLOPT_USERAGENT,'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727;)');
-    // $html=file_get_contents($url);
-    // // $file = fopen("test_HE.php","r");
-    // // echo $file;
-    // $Doc = new DOMDocument();
-    // $Doc->loadHTMLFile("http://140.123.173.10/test_HE.php;");
-    // echo getTextFromDocument($Doc)."\n";
-
-    // if($_GET['myLinkVar'] == "1") {
-    // if(isset($_POST['country']){
-    // echo $_POST['country'];
-    // echo $_POST['city'];
-    if(isset($_POST['submit'])){
-        $country_city = "";
-        // (United States,Abilene, TX)
-        if(isset($_POST['country'])){
-            // echo $_POST['country'];
-        }
-        else{
-            // echo "no country";
-        }
-
-        if(isset($_POST['city'])){
-            // echo $_POST['city'];
-        }
-        else{
-            // echo "no city";
-        }
-
-        if($_POST['country'] == "United States"){
-            $country_city = "(United States," . $_POST['city'] . ")";
-            // echo $country_city;
-        }
-        else{
-            $country_city = "(" . $_POST['country'] . "," . $_POST['city'] . ")";
-            // echo $_POST['city'];
-        }
-                                    
-        $command = escapeshellcmd("python3 /var/www/html/spark_test.py $country_city");
-        $output = shell_exec($command); 
-        echo $output;
-        // echo gettype($_POST['country']);
-        // echo gettype($_POST['city']);
-    }
-    else{
-        echo "None!!!!";
-    }
+include __DIR__.'/php_files/covid_connect_to_spark.php';
 ?>
+
+<!-- D3 of HE -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="js_files/gen_he_d3.js"></script>
 
 </body>
 
