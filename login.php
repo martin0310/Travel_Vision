@@ -85,7 +85,7 @@ https://templatemo.com/tm-560-astro-motion
                                     </li>
 
                                     <li id="navi_05" class="nav-item">
-                                        <a class="nav-link" href="login.php">Login</a>
+                                        <a class="nav-link" href="#0">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -96,59 +96,59 @@ https://templatemo.com/tm-560-astro-motion
         </div>
 
             <div class="container-fluid tm-content-container">
-            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container w3-content">
-                        
-            <!-- banner -->
-            <img class="mySlides" src="img/food2.png" alt="cost_of_living_no1" style="width:900px; height:480px; margin:0 auto">
-            <img class="mySlides" src="img/travel2.png" alt="quality_of_life_no1" style="width:900px; height:480px; margin:0 auto">
-            <img class="mySlides" src="img/crime1.png" alt="crime_rate_no1" style="width:900px; height:480px; margin:0 auto">
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            function plusDivs(n) {
-            showDivs(slideIndex += n);
-            }
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = x.length}
-                for(i = 0; i < x.length; i++) {x[i].style.display = "none";}
-                 x[slideIndex-1].style.display = "block"; 
-                }
-        </script>
+
             <div class="circle intro-circle-1"></div>
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>    
-            </div>
-
-
-                        <ul class="cd-hero-slider mb-0 py-5">                     
+        
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
-                        <div class="intro-left tm-bg-dark" style="margin:0 auto">
-                            <div style="text-align:center">
-                                <h2>WELCOME !</h2>
-                                <h6 class="mb-4">Registering for free trial !</h6>
-                            </div>
+                            <div class="intro-left tm-bg-dark" style="margin:0 auto">
+                                <div style="text-align:center">    
+                                    <h2>LOG IN</h2>
+                                </div>
+                                <p>
+                                <!-- Login Box -->
+                                <form name="form" action="http://127.0.0.1/KimiSignUp/login.php" method="POST" accept-charset="UTF-8">
+                                    <p>
+                                    Account : <input type="text" name="memid" size="15" style="width:150px; height:15px; background:rgba(0,0,0,0); border:none; border-bottom: 1px solid white;" /> <br/><br/>
+
+                                        Password : <input type="password" name="pw" size="15" style="width:144px; height:15px; background:rgba(0,0,0,0); border:none; border-bottom: 1px solid white;" /> <br/>
+                                </p>
                                 <p class="mb-4">
-                                    Advantages for Member mode : </br>
-                                    1. Browsing <b><front color="#FFEE99">integration information</front></b> of one country.</br>
-                                    2. Enjoying member only information - variety of <b>ranks of countries</b>.</p>
-                            <div style="text-align:center">
-                                <h6 class="mb-4">
-                                    Go to <a rel="nofollow" href="register.php" target="_blank">Register</a> / <a rel="nofollow" href="login.php" target="_blank">Log in</a> .</h6>
+                                    <input type="reset" value="Reset"  class="loginbox loginbox-hover">
+                                    <input type="submit" style="text-align:right;" value="Submit" class="loginbox loginbox-hover;"></br>
+                                </p>
+
+                                </form>
+                                </p>
+                                <?php 
+
+	if(($_POST['memid'] == 'kimi0403') && ($_POST['pw'] == 'ramuda0214'))
+	{
+        	echo '登入成功!<br/>';
+		echo '<a href="http://127.0.0.1/KimiSignUp/index000.html">點此進入系統後臺</a><br>';
+	}
+	else
+	{
+        	echo "登入失敗!";
+		echo '<a href="http://127.0.0.1/KimiSignUp/index.html">點此回首頁</a><br>';
+	}
+?>
+
+                                <p class="mb-4">
+                                    付費方式待討論。</p>
+                                <p class="mb-0">
+                                    方案選擇<a rel="nofollow" href="https://templatemo.com/contact" target="_blank">選擇</a> 點此。 </p>
+                                
                             </div>
-                        </div>
 
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
                         </div></div>
-                        </ul>
+
                         <div class="text-center">
                            
             
@@ -159,7 +159,7 @@ https://templatemo.com/tm-560-astro-motion
                     Call us for any questions.</br>1-800-000-0000
                 </div>
                 <div class="col-md-6 px-0 tm-footer-right">
-                © 2021 by Dept. MIS CCU </br>Mail : ccuTravelVision@gmail.com
+                © 2021 by Dept. MIS CCU 
                 </div>
             </footer>
         </div>

@@ -915,3 +915,23 @@ ul.navbar-nav ul li:hover>ul {
     /* 第二層之後的選單展開位置*/
     left: 90%;
 }
+
+
+/* Login Box */
+
+.loginbox {
+    font-size: 5px;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 23px;
+    margin-top: 3px;
+    margin-left: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginbox:hover {
+    color: #fff3af;
+    background-color: rgba(0, 0, 0, 0.8);
+}

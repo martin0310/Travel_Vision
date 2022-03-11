@@ -64,7 +64,7 @@
                                     </li>
 
                                     <li id="navi_05" class="nav-item">
-                                        <a class="nav-link" href="#0">Login</a>
+                                        <a class="nav-link" href="login.php">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -78,10 +78,7 @@
                             <div class="intro-left tm-bg-dark" style="margin:0 auto">
                                 <h2 class="mb-4">Select A Location</h2>
                                 <h6 class="mb-4">
-                                    Please enter a country or a city. <br/><br/>
-                                    Example <br/>
-                                    Chosse Taiwan：Enter "Taiwan,not_a_city"<br/>
-                                    Choose Taipei：Enter "Taiwan,Taipei"
+                                    Please choose a country and one of its city. <br/><br/>
                                 </h6>
 
                             <div class="select_country_city_form">
@@ -100,15 +97,19 @@
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
-                            
-                            </div><br/>
-                            
-                        </div>
-
-                            
+                        </div> 
                     </div>
 
+                    <!-- d3 tag -->
+                    <ul class="cd-hero-slider mb-0 py-5">                     
+                    <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
                     <div id="quality_of_life_d3" name="quality_of_life_d3"></div>
+                    <div class="circle intro-circle-1"></div>
+                        <div class="circle intro-circle-2"></div>
+                        <div class="circle intro-circle-3"></div>
+                        <div class="circle intro-circle-4"></div>
+                    </div></ul>
+                    </div>
 
                     <<div class="container-fluid">
                         <footer class="row mx-auto tm-footer">
@@ -116,7 +117,7 @@
                             Call us for any questions.</br>1-800-000-0000
                         </div>
                         <div class="col-md-6 px-0 tm-footer-right">
-                            © 2021 by Dept. MIS CCU 
+                            © 2021 by Dept. MIS CCU </br>Mail : ccuTravelVision@gmail.com
                         </div>
                         </footer>
                     </div>

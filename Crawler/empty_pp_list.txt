@@ -49,7 +49,6 @@
 (Australia,Moe) --> https://www.numbeo.com/property-investment/in/Moe-Australia
 (Australia,Mudgee) --> https://www.numbeo.com/property-investment/in/Mudgee-Australia
 (Australia,Muswellbrook) --> https://www.numbeo.com/property-investment/in/Muswellbrook-Australia
-(Australia,Port Douglas) --> https://www.numbeo.com/property-investment/in/Port-Douglas-Australia
 (Australia,Romsey) --> https://www.numbeo.com/property-investment/in/Romsey-Australia
 (Australia,Sale) --> https://www.numbeo.com/property-investment/in/Sale-Australia
 (Australia,Springsure) --> https://www.numbeo.com/property-investment/in/Springsure-Australia
@@ -60,7 +59,6 @@
 (Azerbaijan,Nakhchivan (Naxcivan)) --> https://www.numbeo.com/property-investment/in/Nakhchivan-Naxcivan
 (Azerbaijan,Shirvan (Ali Bayramli)) --> https://www.numbeo.com/property-investment/in/Shirvan-Ali-Bayramli
 (Azerbaijan,Ucar) --> https://www.numbeo.com/property-investment/in/Ucar-Azerbaijan
-(Azerbaijan,Zaqatala) --> https://www.numbeo.com/property-investment/in/Zaqatala-Azerbaijan
 (Bahamas,Alice Town) --> https://www.numbeo.com/property-investment/in/Alice-Town-Bahamas
 (Bahamas,Duncan Town) --> https://www.numbeo.com/property-investment/in/Duncan-Town-Bahamas
 (Bahamas,Fresh Creek) --> https://www.numbeo.com/property-investment/in/Fresh-Creek-Bahamas
@@ -73,7 +71,6 @@
 (Bahamas,West End) --> https://www.numbeo.com/property-investment/in/West-End-Bahamas
 (Bahrain,Sitrah) --> https://www.numbeo.com/property-investment/in/Sitrah-Bahrain
 (Bahrain,Zinj) --> https://www.numbeo.com/property-investment/in/Zinj-Bahrain
-(Bangladesh,Begamganj) --> https://www.numbeo.com/property-investment/in/Begamganj-Bangladesh
 (Bangladesh,Chandpur) --> https://www.numbeo.com/property-investment/in/Chandpur-Bangladesh
 (Barbados,Alexandra) --> https://www.numbeo.com/property-investment/in/Alexandra-Barbados
 (Barbados,Bel Air) --> https://www.numbeo.com/property-investment/in/Bel-Air-Barbados
@@ -275,7 +272,6 @@
 (Ghana,Nungua) --> https://www.numbeo.com/property-investment/in/Nungua-Ghana
 (Ghana,Tongo) --> https://www.numbeo.com/property-investment/in/Tongo-Ghana
 (Ghana,Winneba) --> https://www.numbeo.com/property-investment/in/Winneba-Ghana
-(Greece,Aegiali) --> https://www.numbeo.com/property-investment/in/Aegiali-Greece
 (Greece,Agios Nikolaos) --> https://www.numbeo.com/property-investment/in/Agios-Nikolaos
 (Greece,Alexandroupoli) --> https://www.numbeo.com/property-investment/in/Alexandroupoli
 (Greece,Aspropyrgos) --> https://www.numbeo.com/property-investment/in/Aspropyrgos-Greece
@@ -292,8 +288,8 @@
 (Guam,Sinajana) --> https://www.numbeo.com/property-investment/in/Sinajana-Guam
 (Guam,Yigo) --> https://www.numbeo.com/property-investment/in/Yigo-Guam
 (Guatemala,Chimaltenango) --> https://www.numbeo.com/property-investment/in/Chimaltenango-Guatemala
+(Guatemala,San Miguel Dueñas) --> https://www.numbeo.com/property-investment/in/San-Miguel-Dueñas
 (Guernsey,Saint Sampson) --> https://www.numbeo.com/property-investment/in/Saint-Sampson-Guernsey
-(Guyana,Blairmont) --> https://www.numbeo.com/property-investment/in/Blairmont-Guyana
 (Guyana,Fort Wellington) --> https://www.numbeo.com/property-investment/in/Fort-Wellington-Guyana
 (Guyana,Uitvlugt) --> https://www.numbeo.com/property-investment/in/Uitvlugt-Guyana
 (Guyana,Vreed en Hoop) --> https://www.numbeo.com/property-investment/in/Vreed-en-Hoop
@@ -409,6 +405,7 @@
 (Kenya,Homa Bay) --> https://www.numbeo.com/property-investment/in/Homa-Bay-Kenya
 (Kosovo (Disputed Territory),Dečani) --> https://www.numbeo.com/property-investment/in/Dečani
 (Kosovo (Disputed Territory),Djeneral Janković) --> https://www.numbeo.com/property-investment/in/Djeneral-Janković
+(Kosovo (Disputed Territory),Ferizaj (Uroševac)) --> https://www.numbeo.com/property-investment/in/Ferizaj-Uroševac
 (Kosovo (Disputed Territory),Gjakova (Djakovica)) --> https://www.numbeo.com/property-investment/in/Gjakova-Djakovica
 (Kosovo (Disputed Territory),Gjilan (Gnjilane)) --> https://www.numbeo.com/property-investment/in/Gjilan-Gnjilane
 (Kosovo (Disputed Territory),Gracanica) --> https://www.numbeo.com/property-investment/in/Gracanica
@@ -435,7 +432,6 @@
 (Laos,Savannakhet) --> https://www.numbeo.com/property-investment/in/Savannakhet-Laos
 (Latvia,Auce) --> https://www.numbeo.com/property-investment/in/Auce-Latvia
 (Latvia,Gulbene) --> https://www.numbeo.com/property-investment/in/Gulbene-Latvia
-(Latvia,Mazsalaca) --> https://www.numbeo.com/property-investment/in/Mazsalaca-Latvia
 (Lebanon,Adma) --> https://www.numbeo.com/property-investment/in/Adma-Lebanon
 (Lebanon,Baalbek) --> https://www.numbeo.com/property-investment/in/Baalbek
 (Lebanon,Bourj Hammoud) --> https://www.numbeo.com/property-investment/in/Bourj-Hammoud-Lebanon
@@ -535,7 +531,6 @@
 (Micronesia,Kolonia) --> https://www.numbeo.com/property-investment/in/Kolonia-Micronesia
 (Moldova,Calarasi) --> https://www.numbeo.com/property-investment/in/Calarasi-Moldova
 (Moldova,Ciuciuleni) --> https://www.numbeo.com/property-investment/in/Ciuciuleni-Moldova
-(Moldova,Cricova) --> https://www.numbeo.com/property-investment/in/Cricova-Moldova
 (Moldova,Dubasari) --> https://www.numbeo.com/property-investment/in/Dubasari-Moldova
 (Moldova,Glodeni) --> https://www.numbeo.com/property-investment/in/Glodeni-Moldova
 (Moldova,Slobozia) --> https://www.numbeo.com/property-investment/in/Slobozia-Moldova
@@ -585,7 +580,6 @@
 (Nicaragua,Ocotal) --> https://www.numbeo.com/property-investment/in/Ocotal-Nicaragua
 (Nicaragua,San Juan del Sur) --> https://www.numbeo.com/property-investment/in/San-Juan-del-Sur
 (Nicaragua,San Rafael del Sur) --> https://www.numbeo.com/property-investment/in/San-Rafael-del-Sur
-(Nigeria,Ondo) --> https://www.numbeo.com/property-investment/in/Ondo-Nigeria
 (Nigeria,Sagamu) --> https://www.numbeo.com/property-investment/in/Sagamu-Nigeria
 (Nigeria,Yenagoa) --> https://www.numbeo.com/property-investment/in/Yenagoa-Nigeria
 (North Macedonia,Brvenica) --> https://www.numbeo.com/property-investment/in/Brvenica
@@ -645,6 +639,7 @@
 (Poland,Elk (Ełk)) --> https://www.numbeo.com/property-investment/in/Elk-Ełk
 (Poland,Kudowa-Zdrój) --> https://www.numbeo.com/property-investment/in/Kudowa-Zdrój
 (Poland,Pabianice) --> https://www.numbeo.com/property-investment/in/Pabianice-Poland
+(Poland,Sobótka) --> https://www.numbeo.com/property-investment/in/Sobótka
 (Poland,Żyrardów) --> https://www.numbeo.com/property-investment/in/Żyrardów
 (Portugal,Alcobaça) --> https://www.numbeo.com/property-investment/in/Alcobaça
 (Portugal,Amarante) --> https://www.numbeo.com/property-investment/in/Amarante-Portugal
@@ -673,7 +668,6 @@
 (Romania,Sannicolau Mare) --> https://www.numbeo.com/property-investment/in/Sannicolau-Mare-Romania
 (Russia,Bakaly) --> https://www.numbeo.com/property-investment/in/Bakaly-Russia
 (Russia,Bakhchisaray) --> https://www.numbeo.com/property-investment/in/Bakhchisaray-Russia
-(Russia,Glazov) --> https://www.numbeo.com/property-investment/in/Glazov-Russia
 (Russia,Ivdel) --> https://www.numbeo.com/property-investment/in/Ivdel-Russia
 (Russia,Naberezhnye Chelny) --> https://www.numbeo.com/property-investment/in/Naberezhnye-Chelny
 (Russia,Shchelkovo (Shchyolkovo)) --> https://www.numbeo.com/property-investment/in/Shchelkovo-Shchyolkovo
@@ -739,7 +733,6 @@
 (Sweden,Angelholm (Ängelholm)) --> https://www.numbeo.com/property-investment/in/Angelholm-Ängelholm
 (Sweden,Bollnäs) --> https://www.numbeo.com/property-investment/in/Bollnäs
 (Sweden,Höllviken) --> https://www.numbeo.com/property-investment/in/Höllviken
-(Sweden,Sala) --> https://www.numbeo.com/property-investment/in/Sala-Sweden
 (Sweden,Varnamo) --> https://www.numbeo.com/property-investment/in/Varnamo-Sweden
 (Switzerland,Acquarossa) --> https://www.numbeo.com/property-investment/in/Acquarossa-Switzerland
 (Switzerland,Airolo) --> https://www.numbeo.com/property-investment/in/Airolo
@@ -798,7 +791,6 @@
 (Tunisia,Tataouine (Tatawin)) --> https://www.numbeo.com/property-investment/in/Tataouine-Tatawin
 (Turkey,Akbuk) --> https://www.numbeo.com/property-investment/in/Akbuk-Turkey
 (Turkey,Dalyan) --> https://www.numbeo.com/property-investment/in/Dalyan-Turkey
-(Turkey,Esenyurt) --> https://www.numbeo.com/property-investment/in/Esenyurt-Turkey
 (Turkey,İstanbul) --> https://www.numbeo.com/property-investment/in/İstanbul
 (Turkey,İzmit) --> https://www.numbeo.com/property-investment/in/İzmit
 (Turkmenistan,Abadan) --> https://www.numbeo.com/property-investment/in/Abadan

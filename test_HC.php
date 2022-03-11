@@ -16,7 +16,7 @@
 
 <body>
 <?php
-    $datatype="PP";
+    $datatype="HC";
 ?>
     <video autoplay muted loop id="bg-video">
         <source src="video/Video.mp4" type="video/mp4">
@@ -92,32 +92,33 @@
                                     <input type="submit" name="submit" value="Submit the form" class="search search-hover"/>
                                 </form>
                             </div>
+                            
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
-                            <div class="circle intro-circle-4"></div>
-                            </div>
-                        </div>
+                            <div class="circle intro-circle-4"></div>                            
+                        </div>        
+                    </div>
 
                     <!-- d3 tag -->
                     <ul class="cd-hero-slider mb-0 py-5">                     
                     <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
-                    <div id="property_price_d3" name="property_price_d3"></div>
-                    <div class="circle intro-circle-1"></div>
+                    <div id="health_care_d3" name="health_care_d3"></div>
+                        <div class="circle intro-circle-1"></div>
                         <div class="circle intro-circle-2"></div>
                         <div class="circle intro-circle-3"></div>
                         <div class="circle intro-circle-4"></div>
                     </div></ul>
                     </div>
 
-                    <div class="container-fluid">
+                    <<div class="container-fluid">
                         <footer class="row mx-auto tm-footer">
-                            <div class="col-md-6 px-0">
-                                Call us for any questions.</br>1-800-000-0000
-                            </div>
-                            <div class="col-md-6 px-0 tm-footer-right">
-                                © 2021 by Dept. MIS CCU </br>Mail : ccuTravelVision@gmail.com
-                            </div>
+                        <div class="col-md-6 px-0">
+                            Call us for any questions.</br>1-800-000-0000
+                        </div>
+                        <div class="col-md-6 px-0 tm-footer-right">
+                            © 2021 by Dept. MIS CCU </br>Mail : ccuTravelVision@gmail.com
+                        </div>
                         </footer>
                     </div>
                 </div>
@@ -143,9 +144,9 @@ include __DIR__.'/php_files/dump_country_city_to_js.php';
 include __DIR__.'/php_files/connect_to_spark.php';
 ?>
 
-<!-- D3 of PP -->
+<!-- D3 of QOL -->
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="js_files/gen_pp_d3.js"></script>
+<script src="js_files/gen_qol_d3.js"></script>
 
 </body>
 
