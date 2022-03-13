@@ -24,6 +24,9 @@
             // echo "no country";
         }
 
+        // TYPE
+        $col_type_var = $_POST['type_dropdown'];
+
         if(isset($_POST['city'])){
             // echo $_POST['city'];
         }
