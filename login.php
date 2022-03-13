@@ -122,19 +122,7 @@ https://templatemo.com/tm-560-astro-motion
 
                                 </form>
                                 </p>
-                                <?php 
-
-	if(($_POST['memid'] == 'kimi0403') && ($_POST['pw'] == 'ramuda0214'))
-	{
-        	echo '登入成功!<br/>';
-		echo '<a href="http://127.0.0.1/KimiSignUp/index000.html">點此進入系統後臺</a><br>';
-	}
-	else
-	{
-        	echo "登入失敗!";
-		echo '<a href="http://127.0.0.1/KimiSignUp/index.html">點此回首頁</a><br>';
-	}
-?>
+                                
 
                                 <p class="mb-4">
                                     付費方式待討論。</p>

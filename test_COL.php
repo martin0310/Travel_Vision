@@ -91,6 +91,19 @@
                                     <select id="city-dropdown" name="city">
                                         <option value="">---Select city---</option>
                                     </select>
+                                    <!-- choose type -->
+                                    <select id="type-dropdown" name="type_dropdown">
+                                        <option value="Buy Apartment Price">Buy Apartment Price</option>
+                                        <option value="Childcare">Childcare</option>
+                                        <option value="Clothing And Shoes">Clothing And Shoes</option>
+                                        <option value="Markets">Markets</option>
+                                        <option value="Rent Per Month">Rent Per Month</option>
+                                        <option value="Restaurants">Restaurants</option>
+                                        <option value="Salaries And Financing">Salaries And Financing</option>
+                                        <option value="Sports And Leisure">Sports And Leisure</option>
+                                        <option value="Transportation">Transportation</option>
+                                        <option value="Utilities (Monthly)">Utilities (Monthly)</option>
+                                    </select>
                                     <input type="submit" name="submit" value="Submit the form" class="search search-hover"/>
                                 </form>
                             </div>
@@ -100,7 +113,9 @@
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
                             </div>
-                        </div>                            
+                        </div> 
+                        
+                    
 
                     <!-- d3 tag -->
                     <ul class="cd-hero-slider mb-0 py-5">                     
@@ -151,6 +166,10 @@ include __DIR__.'/php_files/connect_to_spark.php';
 
 <!-- 表情包😀 -->
 <script src="js_files/col_emoji.js"></script>
+
+<?php
+include __DIR__.'/php_files/type_var.php';
+?>
 
 <script src="js_files/gen_col_d3.js"></script>
 

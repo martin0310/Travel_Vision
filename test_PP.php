@@ -103,7 +103,7 @@
                     <ul class="cd-hero-slider mb-0 py-5">                     
                     <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
                     <div id="property_price_d3" name="property_price_d3"></div>
-                    <div class="circle intro-circle-1"></div>
+                        <div class="circle intro-circle-1"></div>
                         <div class="circle intro-circle-2"></div>
                         <div class="circle intro-circle-3"></div>
                         <div class="circle intro-circle-4"></div>

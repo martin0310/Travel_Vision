@@ -1,3 +1,5 @@
+from pickle import APPEND, NONE
+
 from bs4 import BeautifulSoup
 import requests
 import json
@@ -122,6 +124,7 @@ current_proc = 1
 
 empty_cost_of_living = []
 empty_property_prices = []
+empty_quality_of_life = []
 
 #2022/02/09 Test United-States
 United_States_test_list = [s for s in country_city_tuple_list if "United States" in s]
@@ -150,7 +153,7 @@ for e in country_city_tuple_list:
 
         crawl_country_data_col = soup2_col.find_all("div", class_="category_title")
         crawl_country_data_pp = soup2_pp.find_all("div", class_="category_title")
-        
+
         # COL
         type_col_item_count_dict = {"Restaurants" : 8, "Markets" : 19, "Transportation" : 8, "Utilities (Monthly)" : 3, "Sports And Leisure" : 3, "Childcare" : 2, "Clothing And Shoes" : 4, "Rent Per Month" : 4, "Buy Apartment Price" : 2, "Salaries And Financing" : 2}
         
@@ -209,11 +212,124 @@ for e in country_city_tuple_list:
 
         # print(albania_col_type_dict)
 
+        #QOL
+
+        crawl_quality_of_life_temp = {}
+        crawl_country_html_qol = requests.get('https://www.numbeo.com/quality-of-life/country_result.jsp?country=' + e[1:e.find(',')])
+        current_processing_url_qol = 'https://www.numbeo.com/quality-of-life/country_result.jsp?country=' + e[1:e.find(',')]
+        if "There are no  data for" in crawl_country_html_qol.text:
+            empty_quality_of_life.append(e + ' --> ' + current_processing_url_qol)
+            crawl_quality_of_life_temp['quality_of_life_type'] = {}
+            
+
+            crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_country_col_type_dict
+            crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_country_pp_type_dict
+
+            crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
+            crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
+            crawl_country_city_dictionary[e].append(crawl_quality_of_life_temp)
+
+            print(" <Done>")
+            current_proc = current_proc + 1
+
+            with open("/home/datavis/numbeo_data/" + e + ".json", "w") as outfile:
+                json_temp = {e : crawl_country_city_dictionary[e]}
+                json.dump(json_temp, outfile)
+
+            continue
+
+        soup2_qol = BeautifulSoup(crawl_country_html_qol.text, "lxml")
+        # crawl_country_data2_qol = soup2_qol.select("table tbody tr td")
+        crawl_country_data2_qol = soup2_qol.select("table")
+        temp_crawl_country_data2_qol = soup2_qol.select("table")
+
+        crawl_country_data2_qol = crawl_country_data2_qol[2]
+        # crawl_country_data2_qol = soup2_qol.find("table tbody")
+        # crawl_country_data2_qol = BeautifulSoup(crawl_country_data2_qol, "html.parser")
+        crawl_country_data2_qol = crawl_country_data2_qol.select("td")
+
+        if len(crawl_country_data2_qol) < 28:
+            crawl_country_data2_qol = temp_crawl_country_data2_qol[3].select("td")
+
+        # print("crawl_country_data2_qol length is : ")
+        # print(len(crawl_country_data2_qol))
+
+        crawl_country_qol_type_dict = {}
+        
+        all_element_text_qol = []
+        
+        # for data in crawl_country_data2_qol:
+        #     all_element_text_qol.append(data.select(td a ))
+
+        for i in range(len(crawl_country_data2_qol)):
+            # print(i)
+            # print("\n")
+            if i == 24:
+                continue
+            if i == 25:
+                all_element_text_qol.append(crawl_country_data2_qol[i].getText().replace("ƒ ",""))
+                # print(crawl_country_data2_qol[i].getText().replace("ƒ ",""))
+                # print(type(crawl_country_data2_qol[i].getText().replace("ƒ ","")))
+                continue
+            if i == 26:
+                all_element_text_qol.append(crawl_country_data2_qol[i].getText())
+                # print(crawl_country_data2_qol[i].getText())
+                # print(type(crawl_country_data2_qol[i].getText()))
+                continue
+            if i == 27:
+                if crawl_country_data2_qol[i].find("span") is None:
+                    all_element_text_qol.append(crawl_country_data2_qol[i].getText())
+                    # print(crawl_country_data2_qol[i].getText())
+                    # print(type(crawl_country_data2_qol[i].getText()))
+                else :
+                    all_element_text_qol.append(crawl_country_data2_qol[i].find("span").getText())
+                    # print(crawl_country_data2_qol[i].find("span").getText())
+                    # print(type(crawl_country_data2_qol[i].find("span").getText()))
+                continue
+
+            if i % 3 == 0:
+                all_element_text_qol.append(crawl_country_data2_qol[i].find("a").getText())
+                # print(crawl_country_data2_qol[i].find("a").getText())
+                # print(type(crawl_country_data2_qol[i].find("a").getText()))
+            elif i % 3 == 1:
+                # all_element_text_qol.append(crawl_country_data2_qol[i].find("td").getText())
+                all_element_text_qol.append(crawl_country_data2_qol[i].getText())
+                # print(crawl_country_data2_qol[i].getText())
+                # print(type(crawl_country_data2_qol[i].getText()))
+            else:
+                if crawl_country_data2_qol[i].find("span") is None:
+                    all_element_text_qol.append(crawl_country_data2_qol[i].getText())
+                    # print(crawl_country_data2_qol[i].getText())
+                    # print(type(crawl_country_data2_qol[i].getText()))
+                else :
+                    all_element_text_qol.append(crawl_country_data2_qol[i].find("span").getText())
+                    # print(crawl_country_data2_qol[i].find("span").getText())
+                    # print(type(crawl_country_data2_qol[i].find("span").getText()))
+                
+
+        # # print(all_element_text_qol[0])
+        # for i in range(0,len(all_element_text_qol)):
+        for i in range(len(all_element_text_qol)):    
+            if i % 3 == 0:
+                crawl_country_qol_type_dict[all_element_text_qol[i]] = []
+                crawl_country_qol_type_dict[all_element_text_qol[i]].append(all_element_text_qol[i + 1])
+                crawl_country_qol_type_dict[all_element_text_qol[i]].append(all_element_text_qol[i + 2])
+
+        # crawl_quality_of_life_temp = {}
+        # crawl_country_data2_qol
+
+
+
+
+
+
         crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_country_col_type_dict
         crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_country_pp_type_dict
+        crawl_quality_of_life_temp['quality_of_life_type'] = crawl_country_qol_type_dict
 
         crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
         crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
+        crawl_country_city_dictionary[e].append(crawl_quality_of_life_temp)
 
         # print(albania_dict)
 
@@ -258,9 +374,11 @@ for e in country_city_tuple_list:
 
         current_processing_url_col = 'https://www.numbeo.com/cost-of-living/in/' + city_name + '-' + state_name + dash + country_name
         current_processing_url_pp = 'https://www.numbeo.com/property-investment/in/' + city_name + '-' + state_name + dash + country_name
+        current_processing_url_qol = 'https://www.numbeo.com/quality-of-life/in/' + city_name + '-' + state_name + dash + country_name
 
         crawl_city_html_col = requests.get(current_processing_url_col)
         crawl_city_html_pp = requests.get(current_processing_url_pp)
+        crawl_city_html_qol = requests.get(current_processing_url_qol)
 
         # COL
         if "Cannot find city id for" in crawl_city_html_col.text:
@@ -282,10 +400,25 @@ for e in country_city_tuple_list:
                 current_processing_url_pp = 'https://www.numbeo.com/property-investment/in/' + city_name
                 crawl_city_html_pp = requests.get(current_processing_url_pp)
 
+        # QOL
+        if "Cannot find city id for" in crawl_city_html_qol.text:
+
+            current_processing_url_qol = 'https://www.numbeo.com/quality-of-life/in/' + city_name + '-' + state_name
+            crawl_city_html_qol = requests.get(current_processing_url_qol)
+
+            if "Cannot find city id for" in crawl_city_html_qol.text:
+                current_processing_url_qol = 'https://www.numbeo.com/quality-of-life/in/' + city_name
+                crawl_city_html_qol = requests.get(current_processing_url_qol)   
+        # print("//////////////")            
+        # print(crawl_city_html_qol.text)
+
+    
+
         #Print Current Processing URL
         print()
         print(current_processing_url_col)
         print(current_processing_url_pp)
+        print(current_processing_url_qol)
 
         soup2_col = BeautifulSoup(crawl_city_html_col.text, "lxml")
         soup2_pp = BeautifulSoup(crawl_city_html_pp.text, "lxml")
@@ -350,16 +483,137 @@ for e in country_city_tuple_list:
 
         # print(albania_col_type_dict)
 
+
+        
+
+        
+
+
         if len(crawl_city_col_type_dict) == 0:
             empty_cost_of_living.append(e + ' --> ' + current_processing_url_col)
         if len(crawl_city_pp_type_dict) == 0:
             empty_property_prices.append(e + ' --> ' + current_processing_url_pp)
 
+        #QOL
+
+        crawl_quality_of_life_temp = {}
+        if "There are no  data for" in crawl_city_html_qol.text or "Cannot find city id for" in crawl_city_html_qol.text:
+            empty_quality_of_life.append(e + ' --> ' + current_processing_url_qol)
+            crawl_quality_of_life_temp['quality_of_life_type'] = {}
+            
+            
+            crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_city_col_type_dict
+            crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_city_pp_type_dict
+            # crawl_quality_of_life_temp['quality_of_life_type'] = crawl_city_qol_type_dict
+
+            crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
+            crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
+            crawl_country_city_dictionary[e].append(crawl_quality_of_life_temp)
+
+            print(" <Done>")
+            current_proc = current_proc + 1
+
+            with open("/home/datavis/numbeo_data/" + e + ".json", "w") as outfile:
+                json_temp = {e : crawl_country_city_dictionary[e]}
+                json.dump(json_temp, outfile)
+
+            continue
+
+
+
+        # crawl_country_html_qol = requests.get('https://www.numbeo.com/quality-of-life/country_result.jsp?country=' + e[1:e.find(',')])
+        soup2_qol = BeautifulSoup(crawl_city_html_qol.text, "lxml")
+        # crawl_city_data2_qol = soup2_qol.select("table tbody tr td")
+        crawl_city_data2_qol = soup2_qol.select("table")
+        temp_crawl_city_data2_qol = soup2_qol.select("table")
+
+        # print(crawl_city_html_qol.text)
+        crawl_city_data2_qol = crawl_city_data2_qol[2]
+
+        crawl_city_data2_qol = crawl_city_data2_qol.select("td")
+
+        if len(crawl_city_data2_qol) < 28:
+            crawl_city_data2_qol = temp_crawl_city_data2_qol[3].select("td")
+        
+        # print("crawl_city_data2_qol length is : ")
+        # print(len(crawl_city_data2_qol))
+
+        crawl_city_qol_type_dict = {}
+        
+        all_element_text_qol = []
+        
+        
+        # print(all_element_text_qol)  # data 是 [] -- > 空的
+        # print(crawl_city_data2_qol)
+        for i in range(len(crawl_city_data2_qol)):
+            # print(i)
+            # print("\n")
+            if i == 24:
+                continue
+            if i == 25:
+                all_element_text_qol.append(crawl_city_data2_qol[i].getText().replace("ƒ ",""))
+                # print(crawl_city_data2_qol[i].getText().replace("ƒ ",""))
+                # print(type(crawl_city_data2_qol[i].getText().replace("ƒ ","")))
+                continue
+            if i == 26:
+                all_element_text_qol.append(crawl_city_data2_qol[i].getText())
+                # print(crawl_city_data2_qol[i].getText())
+                # print(type(crawl_city_data2_qol[i].getText()))
+                continue
+            if i == 27:
+                if crawl_city_data2_qol[i].find("span") is None:
+                    all_element_text_qol.append(crawl_city_data2_qol[i].getText())
+                    # print(crawl_city_data2_qol[i].getText())
+                    # print(type(crawl_city_data2_qol[i].getText()))
+                else :
+                    all_element_text_qol.append(crawl_city_data2_qol[i].find("span").getText())
+                    # print(crawl_city_data2_qol[i].find("span").getText())
+                    # print(type(crawl_city_data2_qol[i].find("span").getText()))
+                continue
+
+            if i % 3 == 0:
+                all_element_text_qol.append(crawl_city_data2_qol[i].find("a").getText())
+                # print(crawl_city_data2_qol[i].find("a").getText())
+                # print(type(crawl_city_data2_qol[i].find("a").getText()))
+            elif i % 3 == 1:
+                # all_element_text_qol.append(crawl_country_data2_qol[i].find("td").getText())
+                all_element_text_qol.append(crawl_city_data2_qol[i].getText())
+                # print(crawl_city_data2_qol[i].getText())
+                # print(type(crawl_city_data2_qol[i].getText()))
+            else:
+                if crawl_city_data2_qol[i].find("span") is None:
+                    all_element_text_qol.append(crawl_city_data2_qol[i].getText())
+                    # print(crawl_city_data2_qol[i].getText())
+                    # print(type(crawl_city_data2_qol[i].getText()))
+                else :
+                    all_element_text_qol.append(crawl_city_data2_qol[i].find("span").getText())
+                    # print(crawl_city_data2_qol[i].find("span").getText())
+                    # print(type(crawl_city_data2_qol[i].find("span").getText()))
+        
+        for i in range(len(all_element_text_qol)): 
+            if i % 3 == 0:
+                # print(all_element_text_qol[i])
+                crawl_city_qol_type_dict[all_element_text_qol[i]] = []
+                crawl_city_qol_type_dict[all_element_text_qol[i]].append(all_element_text_qol[i + 1])
+                crawl_city_qol_type_dict[all_element_text_qol[i]].append(all_element_text_qol[i + 2])
+
+
+
+        # if len(crawl_city_qol_type_dict) == 0:
+        #     empty_quality_of_life.append(e + ' --> ' + current_processing_url_qol)
+
+
+
+
+        
+
         crawl_cost_of_living_dictionary_temp['cost_of_livings_type'] = crawl_city_col_type_dict
         crawl_property_prices_dictionary_temp['property_prices_type'] = crawl_city_pp_type_dict
+        crawl_quality_of_life_temp['quality_of_life_type'] = crawl_city_qol_type_dict
 
         crawl_country_city_dictionary[e].append(crawl_cost_of_living_dictionary_temp)
         crawl_country_city_dictionary[e].append(crawl_property_prices_dictionary_temp)
+        crawl_country_city_dictionary[e].append(crawl_quality_of_life_temp)
 
         # print(albania_dict)
 
@@ -375,6 +629,9 @@ with open('empty_col_list.txt', 'w') as outfile:
         outfile.write(e + '\n')
 with open('empty_pp_list.txt', 'w') as outfile:
     for e in empty_property_prices:
+        outfile.write(e + '\n')
+with open('empty_qol_list.txt', 'w') as outfile:
+    for e in empty_quality_of_life:
         outfile.write(e + '\n')
 
 # print(crawl_country_city_dictionary)

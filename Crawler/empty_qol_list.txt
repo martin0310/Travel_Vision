@@ -1,0 +1,122 @@
+(Canada,Ajax, ON) --> https://www.numbeo.com/quality-of-life/in/Ajax-ON
+(Canada,Annapolis Valley, NS) --> https://www.numbeo.com/quality-of-life/in/Annapolis-Valley-NS-Canada
+(Canada,Antigonish) --> https://www.numbeo.com/quality-of-life/in/Antigonish-Canada
+(Canada,Armstrong) --> https://www.numbeo.com/quality-of-life/in/Armstrong-Canada
+(Canada,Baie-Comeau) --> https://www.numbeo.com/quality-of-life/in/Baie-Comeau-Canada
+(Canada,Banff) --> https://www.numbeo.com/quality-of-life/in/Banff
+(Canada,Bathurst) --> https://www.numbeo.com/quality-of-life/in/Bathurst-Canada
+(Canada,Boisbriand, QC) --> https://www.numbeo.com/quality-of-life/in/Boisbriand-QC-Canada
+(Canada,Bowen Island) --> https://www.numbeo.com/quality-of-life/in/Bowen-Island-Canada
+(Canada,Bowmanville, Ontario) --> https://www.numbeo.com/quality-of-life/in/Bowmanville-Ontario-Canada
+(Canada,Brandon, MB) --> https://www.numbeo.com/quality-of-life/in/Brandon-MB
+(Canada,Bridgewater, NS) --> https://www.numbeo.com/quality-of-life/in/Bridgewater-NS-Canada
+(Canada,Brossard) --> https://www.numbeo.com/quality-of-life/in/Brossard-Canada
+(Canada,Campbell River) --> https://www.numbeo.com/quality-of-life/in/Campbell-River-Canada
+(Canada,Camrose) --> https://www.numbeo.com/quality-of-life/in/Camrose-Canada
+(Canada,Canmore) --> https://www.numbeo.com/quality-of-life/in/Canmore-Canada
+(Canada,Castlegar, BC) --> https://www.numbeo.com/quality-of-life/in/Castlegar-BC-Canada
+(Canada,Chatham-Kent) --> https://www.numbeo.com/quality-of-life/in/Chatham-Kent-Canada
+(Canada,Châteauguay, QC) --> https://www.numbeo.com/quality-of-life/in/Châteauguay-QC-Canada
+(Canada,Cobourg) --> https://www.numbeo.com/quality-of-life/in/Cobourg-Canada
+(Canada,Cochrane) --> https://www.numbeo.com/quality-of-life/in/Cochrane-Canada
+(Canada,Cold Lake) --> https://www.numbeo.com/quality-of-life/in/Cold-Lake-Canada
+(Canada,Comox, BC) --> https://www.numbeo.com/quality-of-life/in/Comox-BC
+(Canada,Corner Brook) --> https://www.numbeo.com/quality-of-life/in/Corner-Brook-Canada
+(Canada,Cornwall, ON) --> https://www.numbeo.com/quality-of-life/in/Cornwall-ON
+(Canada,Cranbrook) --> https://www.numbeo.com/quality-of-life/in/Cranbrook-Canada
+(Canada,Dartmouth) --> https://www.numbeo.com/quality-of-life/in/Dartmouth-Canada
+(Canada,Dawson City) --> https://www.numbeo.com/quality-of-life/in/Dawson-City-Canada
+(Canada,Drayton Valley) --> https://www.numbeo.com/quality-of-life/in/Drayton-Valley-Canada
+(Canada,Drummondville) --> https://www.numbeo.com/quality-of-life/in/Drummondville-Canada
+(Canada,Edmundston) --> https://www.numbeo.com/quality-of-life/in/Edmundston-Canada
+(Canada,Estevan) --> https://www.numbeo.com/quality-of-life/in/Estevan-Canada
+(Canada,Flin Flon) --> https://www.numbeo.com/quality-of-life/in/Flin-Flon-Canada
+(Canada,Fort Erie, ON) --> https://www.numbeo.com/quality-of-life/in/Fort-Erie-ON-Canada
+(Canada,Fort Frances, Ontario) --> https://www.numbeo.com/quality-of-life/in/Fort-Frances-Ontario-Canada
+(Canada,Fort Nelson, BC) --> https://www.numbeo.com/quality-of-life/in/Fort-Nelson-BC-Canada
+(Canada,Fort Saskatchewan) --> https://www.numbeo.com/quality-of-life/in/Fort-Saskatchewan-Canada
+(Canada,Fort St John, BC) --> https://www.numbeo.com/quality-of-life/in/Fort-St-John-BC
+(Canada,Gander) --> https://www.numbeo.com/quality-of-life/in/Gander-Canada
+(Canada,Gibsons, BC) --> https://www.numbeo.com/quality-of-life/in/Gibsons-BC-Canada
+(Canada,Golden, BC) --> https://www.numbeo.com/quality-of-life/in/Golden-BC-Canada
+(Canada,Granby, QC) --> https://www.numbeo.com/quality-of-life/in/Granby-QC-Canada
+(Canada,Grand Bend) --> https://www.numbeo.com/quality-of-life/in/Grand-Bend-Canada
+(Canada,Grand Falls-Windsor) --> https://www.numbeo.com/quality-of-life/in/Grand-Falls-Windsor-Canada
+(Canada,Gravelbourg) --> https://www.numbeo.com/quality-of-life/in/Gravelbourg-Canada
+(Canada,Happy Valley-Goose Bay) --> https://www.numbeo.com/quality-of-life/in/Happy-Valley-Goose-Bay-Canada
+(Canada,Hay River, NT) --> https://www.numbeo.com/quality-of-life/in/Hay-River-NT-Canada
+(Canada,High Level) --> https://www.numbeo.com/quality-of-life/in/High-Level-Canada
+(Canada,Hinton) --> https://www.numbeo.com/quality-of-life/in/Hinton-Canada
+(Canada,Innisfil, ON) --> https://www.numbeo.com/quality-of-life/in/Innisfil-ON-Canada
+(Canada,Inuvik) --> https://www.numbeo.com/quality-of-life/in/Inuvik-Canada
+(Canada,Jasper) --> https://www.numbeo.com/quality-of-life/in/Jasper-Canada
+(Canada,Joliette) --> https://www.numbeo.com/quality-of-life/in/Joliette-Canada
+(Canada,Kenora) --> https://www.numbeo.com/quality-of-life/in/Kenora-Canada
+(Canada,Kimberley) --> https://www.numbeo.com/quality-of-life/in/Kimberley-Canada
+(Canada,Kirkland Lake) --> https://www.numbeo.com/quality-of-life/in/Kirkland-Lake-Canada
+(Canada,La Dore) --> https://www.numbeo.com/quality-of-life/in/La-Dore-Canada
+(Canada,La Ronge, SK) --> https://www.numbeo.com/quality-of-life/in/La-Ronge-SK-Canada
+(Canada,Labrador City) --> https://www.numbeo.com/quality-of-life/in/Labrador-City-Canada
+(Canada,Ladner, BC) --> https://www.numbeo.com/quality-of-life/in/Ladner-BC-Canada
+(Canada,Lake Louise AB) --> https://www.numbeo.com/quality-of-life/in/Lake-Louise-AB-Canada
+(Canada,Langley, BC) --> https://www.numbeo.com/quality-of-life/in/Langley-BC
+(Canada,Leamington) --> https://www.numbeo.com/quality-of-life/in/Leamington-Canada
+(Canada,Lethbridge, AB) --> https://www.numbeo.com/quality-of-life/in/Lethbridge-AB
+(Canada,Listowel) --> https://www.numbeo.com/quality-of-life/in/Listowel-Canada
+(Canada,Lloydminster) --> https://www.numbeo.com/quality-of-life/in/Lloydminster-Canada
+(Canada,Mackenzie, BC) --> https://www.numbeo.com/quality-of-life/in/Mackenzie-BC-Canada
+(Canada,Malton) --> https://www.numbeo.com/quality-of-life/in/Malton-Canada
+(Canada,Mascouche) --> https://www.numbeo.com/quality-of-life/in/Mascouche-Canada
+(Canada,Montmagny) --> https://www.numbeo.com/quality-of-life/in/Montmagny-Canada
+(Canada,Morden, MB) --> https://www.numbeo.com/quality-of-life/in/Morden-MB-Canada
+(Canada,Mount Pearl) --> https://www.numbeo.com/quality-of-life/in/Mount-Pearl-Canada
+(Canada,Nanaimo, BC) --> https://www.numbeo.com/quality-of-life/in/Nanaimo-BC
+(Canada,Orangeville) --> https://www.numbeo.com/quality-of-life/in/Orangeville-Canada
+(Canada,Orillia, ON) --> https://www.numbeo.com/quality-of-life/in/Orillia-ON-Canada
+(Canada,Oxbow SK) --> https://www.numbeo.com/quality-of-life/in/Oxbow-SK-Canada
+(Canada,Parry Sound) --> https://www.numbeo.com/quality-of-life/in/Parry-Sound-Canada
+(Canada,Peace River, AB) --> https://www.numbeo.com/quality-of-life/in/Peace-River-AB-Canada
+(Canada,Pickering, ON) --> https://www.numbeo.com/quality-of-life/in/Pickering-ON-Canada
+(Canada,Picton) --> https://www.numbeo.com/quality-of-life/in/Picton-Canada
+(Canada,Port Alberni) --> https://www.numbeo.com/quality-of-life/in/Port-Alberni-Canada
+(Canada,Port Hawkesbury) --> https://www.numbeo.com/quality-of-life/in/Port-Hawkesbury-Canada
+(Canada,Port Perry) --> https://www.numbeo.com/quality-of-life/in/Port-Perry-Canada
+(Canada,Powell River, BC) --> https://www.numbeo.com/quality-of-life/in/Powell-River-BC-Canada
+(Canada,Quesnel) --> https://www.numbeo.com/quality-of-life/in/Quesnel-Canada
+(Canada,Rimouski,QC) --> https://www.numbeo.com/quality-of-life/in/RimouskiQC
+(Canada,Rivière-du-Loup) --> https://www.numbeo.com/quality-of-life/in/Rivière-du-Loup
+(Canada,Rouyn-Noranda, QC) --> https://www.numbeo.com/quality-of-life/in/Rouyn-Noranda-QC-Canada
+(Canada,Saanich) --> https://www.numbeo.com/quality-of-life/in/Saanich-Canada
+(Canada,Sackville, New Brunswick) --> https://www.numbeo.com/quality-of-life/in/Sackville-New-Brunswick-Canada
+(Canada,Saint-Georges) --> https://www.numbeo.com/quality-of-life/in/Saint-Georges-Canada
+(Canada,Sainte-Adele) --> https://www.numbeo.com/quality-of-life/in/Sainte-Adele-Canada
+(Canada,Sainte-Agathe-des-Monts (Ste-Agathe des Monts)) --> https://www.numbeo.com/quality-of-life/in/Sainte-Agathe-des-Monts-Ste-Agathe-des-Monts-Canada
+(Canada,Salaberry-de-Valleyfield, QC) --> https://www.numbeo.com/quality-of-life/in/Salaberry-de-Valleyfield-QC-Canada
+(Canada,Salmon Arm, BC) --> https://www.numbeo.com/quality-of-life/in/Salmon-Arm-BC-Canada
+(Canada,Salt Spring Island) --> https://www.numbeo.com/quality-of-life/in/Salt-Spring-Island-Canada
+(Canada,Sault Ste. Marie) --> https://www.numbeo.com/quality-of-life/in/Sault-Ste.-Marie
+(Canada,Schefferville) --> https://www.numbeo.com/quality-of-life/in/Schefferville-Canada
+(Canada,Selkirk) --> https://www.numbeo.com/quality-of-life/in/Selkirk-Canada
+(Canada,Sept-Iles) --> https://www.numbeo.com/quality-of-life/in/Sept-Iles-Canada
+(Canada,Slave Lake) --> https://www.numbeo.com/quality-of-life/in/Slave-Lake-Canada
+(Canada,Spruce Grove) --> https://www.numbeo.com/quality-of-life/in/Spruce-Grove-Canada
+(Canada,St-Sauveur des Monts) --> https://www.numbeo.com/quality-of-life/in/St-Sauveur-des-Monts-Canada
+(Canada,St. Albert, AB) --> https://www.numbeo.com/quality-of-life/in/St.-Albert-AB
+(Canada,St. John's, Newfoundland and Labrador) --> https://www.numbeo.com/quality-of-life/in/St.-John's-Newfoundland-and-Labrador
+(Canada,St. Paul) --> https://www.numbeo.com/quality-of-life/in/St.-Paul
+(Canada,St. Thomas) --> https://www.numbeo.com/quality-of-life/in/St.-Thomas
+(Canada,Summerland) --> https://www.numbeo.com/quality-of-life/in/Summerland-Canada
+(Canada,Summerside, PE) --> https://www.numbeo.com/quality-of-life/in/Summerside-PE-Canada
+(Canada,Sundre) --> https://www.numbeo.com/quality-of-life/in/Sundre-Canada
+(Canada,Terrace) --> https://www.numbeo.com/quality-of-life/in/Terrace-Canada
+(Canada,Thompson) --> https://www.numbeo.com/quality-of-life/in/Thompson-Canada
+(Canada,Trois-Rivieres, QC) --> https://www.numbeo.com/quality-of-life/in/Trois-Rivieres-QC
+(Canada,Truro) --> https://www.numbeo.com/quality-of-life/in/Truro-Canada
+(Canada,Truro, NS) --> https://www.numbeo.com/quality-of-life/in/Truro-NS-Canada
+(Canada,Vanderhoof) --> https://www.numbeo.com/quality-of-life/in/Vanderhoof-Canada
+(Canada,Victoriaville, QC) --> https://www.numbeo.com/quality-of-life/in/Victoriaville-QC-Canada
+(Canada,Wallaceburg) --> https://www.numbeo.com/quality-of-life/in/Wallaceburg-Canada
+(Canada,White Rock, BC) --> https://www.numbeo.com/quality-of-life/in/White-Rock-BC
+(Canada,Whitecourt, AB) --> https://www.numbeo.com/quality-of-life/in/Whitecourt-AB-Canada
+(Canada,Williams Lake, BC) --> https://www.numbeo.com/quality-of-life/in/Williams-Lake-BC-Canada
+(Canada,Wolfville) --> https://www.numbeo.com/quality-of-life/in/Wolfville-Canada
