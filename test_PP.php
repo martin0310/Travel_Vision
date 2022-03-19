@@ -76,19 +76,29 @@
         <div class="container-fluid tm-content-container">
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
                             <div class="intro-left tm-bg-dark" style="margin:0 auto">
+                            <div style="text-align:center">
                                 <h2 class="mb-4">Select A Location</h2>
                                 <h6 class="mb-4">
-                                    Please choose a country and one of its city. <br/><br/>
+                                Please choose a country and one of its city.  <br/><br/>
                                 </h6>
+                            </div>
 
-                            <div class="select_country_city_form">
-                                 <form method="post" action="">  <!--set method to POST -->
+                            <div class="select_country_city_form" style="text-align:center;">
+                                 <form method="post" action="">
+                                    <p>
                                     <select id="country-dropdown" name="country" onchange="coutrySelected(this.value);">
                                         <option value="">---Select country---</option>
                                     </select>
                                     <select id="city-dropdown" name="city">
                                         <option value="">---Select city---</option>
                                     </select>
+                                    <select id="type-dropdown" name="type_dropdown">
+                                        <option value="">---Choose a Type---</option>    
+                                        <option value="Buy Apartment Price">Rent Per Month</option>
+                                        <option value="Childcare">Buy Apartment Price</option>
+                                        <option value="Clothing And Shoes">Salaries And Financing</option>
+                                    </select>
+                                    </p><br>
                                     <input type="submit" name="submit" value="Submit the form" class="search search-hover"/>
                                 </form>
                             </div>
@@ -145,6 +155,10 @@ include __DIR__.'/php_files/connect_to_spark.php';
 
 <!-- D3 of PP -->
 <script src="https://d3js.org/d3.v5.min.js"></script>
+
+<!-- 表情包😀 -->
+<script src="js_files/pp_emoji.js"></script>
+
 <script src="js_files/gen_pp_d3.js"></script>
 
 </body>

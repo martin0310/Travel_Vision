@@ -48,7 +48,7 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="col-xs-12">
                     <div class="cd-slider-nav">
                         <nav class="navbar navbar-expand-lg" id="tm-nav">
-                            <a class="navbar-brand" href="index.php"><img src="/img/Mark.png" alt="Mark" width="170" height="95"></a>
+                            <a class="navbar-brand" href="mem_index.php"><img src="/img/Mark.png" alt="Mark" width="170" height="95"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>

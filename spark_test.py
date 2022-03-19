@@ -31,7 +31,7 @@ datatype = sys.argv[1]
 # print("country_city: " + country_city)
 # print("datatype: " + datatype)
 
-#get col
+# get col
 if datatype == 'COL':
     print(json.loads(df.select(country_city).toJSON().collect()[0])[country_city][0])
 
@@ -40,5 +40,10 @@ if datatype == 'COL':
 # get PP
 if datatype == 'PP':
     print(json.loads(df.select(country_city).toJSON().collect()[0])[country_city][1])
+
+
+#get QOL
+if datatype == 'QOL':
+    print(json.loads(df.select(country_city).toJSON().collect()[0])[country_city][2])
 
 

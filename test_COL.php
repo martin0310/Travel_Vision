@@ -93,6 +93,7 @@
                                     </select>
                                     <!-- choose type -->
                                     <select id="type-dropdown" name="type_dropdown">
+                                        <option value="">---Choose a Type---</option>    
                                         <option value="Buy Apartment Price">Buy Apartment Price</option>
                                         <option value="Childcare">Childcare</option>
                                         <option value="Clothing And Shoes">Clothing And Shoes</option>
@@ -166,10 +167,6 @@ include __DIR__.'/php_files/connect_to_spark.php';
 
 <!-- 表情包😀 -->
 <script src="js_files/col_emoji.js"></script>
-
-<?php
-include __DIR__.'/php_files/type_var.php';
-?>
 
 <script src="js_files/gen_col_d3.js"></script>
 
