@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+    <link rel="stylesheet" href="css/world_Map.css">
     <!--
     
 TemplateMo 560 Astro Motion
@@ -97,6 +99,8 @@ https://templatemo.com/tm-560-astro-motion
         </div>
 
             <div class="container-fluid tm-content-container">
+                <svg width="960" height="500" style="display: block; margin: auto;"></svg>
+                <script src="js_files/worldMap.js"></script>
             <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container w3-content">
                         
             <!-- banner -->

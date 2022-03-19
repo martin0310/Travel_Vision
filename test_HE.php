@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/line_graph_css.css">
 </head>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -162,7 +163,7 @@ include __DIR__.'/php_files/covid_get_date.php';
 ?>
 
 <!-- D3 of HE -->
-<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="js_files/gen_he_d3.js"></script>
 
 </body>

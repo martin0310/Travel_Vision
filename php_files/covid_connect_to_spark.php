@@ -24,7 +24,7 @@
         $shell_cmd = "python3 /var/www/html/spark_covid_get_data.py $covid_country $start_time $end_time";
         $command = escapeshellcmd($shell_cmd);
         $output = shell_exec($command); 
-        echo $output;
+        // echo $output;
         // $output = json_decode($output);
         // echo gettype($output);
         echo "<script>";
