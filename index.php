@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+	
+	echo "WHY CSS DOESN'T WORK?";
         // $spark_test_file = fopen("population_by_country_2020.csv", "r") or die("Unable to open file!");
         // echo fread($spark_test_file, 1024);
         // echo "hello";
@@ -180,5 +182,13 @@ https://templatemo.com/tm-560-astro-motion
     <script src="js/slick.js"></script>
     <script src="js/templatemo-script.js"></script>
 </body>
+
+<?php
+include __DIR__.'/php_files/dump_country_city_to_js.php';
+?>
+
+<?php
+include __DIR__.'/php_files/dump_world_cities_to_js.php';
+?>
 
 </html>

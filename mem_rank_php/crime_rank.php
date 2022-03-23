@@ -26,9 +26,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Travel Vision - 你專屬的旅行夥伴</title>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/slick.css" type="text/css" />
-        <link rel="stylesheet" href="css/templatemo-style.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/slick.css" type="text/css" />
+        <link rel="stylesheet" href="../css/templatemo-style.css">
         <!--
     
 TemplateMo 560 Astro Motion
@@ -38,9 +38,12 @@ https://templatemo.com/tm-560-astro-motion
 -->
     </head>
 
-    <body>        
+    <body>
+        <?php
+            $datatype="crime_rank";
+        ?>
         <video autoplay muted loop id="bg-video">
-        <source src="video/Video.MP4" type="video/MP4">
+        <source src="video/Video.mp4" type="video/mp4">
     </video>
         <div class="page-container">
             <div class="container-fluid">
@@ -48,7 +51,7 @@ https://templatemo.com/tm-560-astro-motion
                     <div class="col-xs-12">
                         <div class="cd-slider-nav">
                             <nav class="navbar navbar-expand-lg" id="tm-nav">
-                                <a class="navbar-brand" href="mem_index.php"><img src="img/Mark.png" alt="Mark" width="170" height="95"></a>
+                                <a class="navbar-brand" href="mem_index.php"><img src="../img/Mark.png" alt="Mark" width="170" height="95"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -59,19 +62,19 @@ https://templatemo.com/tm-560-astro-motion
                                             <div class="circle"></div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="mem_epidemic.php">Epidemic Information</a>
+                                            <a class="nav-link" href="../mem_epidemic.php">Epidemic Information</a>
                                             <div class="circle"></div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="mem_rank.php">Rank of Countries</a>
+                                            <a class="nav-link" href="../mem_rank.php">Rank of Countries</a>
                                             <div class="circle"></div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="mem_integrate.php" data-no="3">Integrate Info of Country</a>
+                                            <a class="nav-link" href="../mem_integrate.php" data-no="3">Integrate Info of Country</a>
                                             <div class="circle"></div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.php" data-no="4">Log Out</a>
+                                            <a class="nav-link" href="../index.php" data-no="4">Log Out</a>
                                             <div class="circle"></div>
                                         </li>
                                     </ul>
@@ -82,59 +85,19 @@ https://templatemo.com/tm-560-astro-motion
                 </div>
             </div>
 
-            <div class="container-fluid tm-content-container">
-                <!-- Image Carousel -->
-
-                <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
-                    <div class="mx-auto gallery-slider">
-                                <figure class="effect-julia item">
-                                    <img src="img/gallery-img-01.jpg" alt="quality_of_life">
-                                    <figcaption>
-                                        <div>
-                                            <a href="mem_rank_php/QOL_rank.php"><p>Quality of life</p</a>
-                                        </div>     
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia item">
-                                    <img src="img/gallery-img-02.jpg" alt="crime">
-                                    <figcaption>
-                                        <div>
-                                            <a href="mem_rank_php/crime_rank.php"><p>Crime</p></a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia item">
-                                    <img src="img/gallery-img-03.jpg" alt="pollution">
-                                    <figcaption>
-                                        <div>
-                                            <a href="mem_rank_php/pollution_rank.php"><p>Pollution</p></a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia item">
-                                    <img src="img/gallery-img-04.jpg" alt="traffic">
-                                    <figcaption>
-                                        <div>
-                                            <a href="mem_rank_php/traffic_rank.php"><p>Traffic</p></a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                                <figure class="effect-julia item">
-                                    <img src="img/gallery-img-05.jpg" alt="health_care">
-                                    <figcaption>
-                                        <div>
-                                            <a href="mem_rank_php/HC_rank.php"><p>Health Care</p></a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-
+                <!-- d3 tag -->
+                <ul class="cd-hero-slider mb-0 py-5">
+                    <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                        <div id="crime_rank_d3" name="crime_rank_d3"></div>
                         <div class="circle intro-circle-1"></div>
                         <div class="circle intro-circle-2"></div>
                         <div class="circle intro-circle-3"></div>
                         <div class="circle intro-circle-4"></div>
+                        <p style="margin:0 auto">
+                            <a style="text-decoration: underline; font-size: 18px;" href="../mem_rank.php">Back</a>
+                        </p>
                     </div>
-                </div>
-
+                </ul>
 
                 <div class="container-fluid">
                     <footer class="row mx-auto tm-footer">
@@ -154,10 +117,10 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="loader-section section-right"></div>
             </div>
 
-            <script src="js/jquery-3.5.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/slick.js"></script>
-            <script src="js/templatemo-script.js"></script>
+            <script src="../js/jquery-3.5.1.min.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/slick.js"></script>
+            <script src="../js/templatemo-script.js"></script>
     </body>
 
 </html>

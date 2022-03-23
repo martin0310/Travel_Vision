@@ -42,10 +42,12 @@ svg.call(d3.zoom().on('zoom', () => {
 //   )
 }));
 
+// console.log(d3.csv('https://gist.githubusercontent.com/martin0310/0e57652a6eac0ea7150b99bff58adb27/raw/8cf830684ab45e8643150008b88852d767919df2/worldcities.csv',d => console.log(d)))
 Promise.all([
   d3.tsv('https://unpkg.com/world-atlas@1.1.4/world/50m.tsv'),
-  d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json')
-]).then(([tsvData, topoJSONdata]) => {
+  d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
+  d3.csv('https://gist.githubusercontent.com/martin0310/0e57652a6eac0ea7150b99bff58adb27/raw/8cf830684ab45e8643150008b88852d767919df2/worldcities.csv')
+]).then(([tsvData, topoJSONdata,worldCities]) => {
   
   const countryName = tsvData.reduce((accumulator, d) => {
     accumulator[d.iso_n3] = d.name;
@@ -58,16 +60,32 @@ Promise.all([
     countryName[d.iso_n3] = d.name;
   });
   */
-  
+ 
+  // console.log(worldCities) type -- > object
   const countries = topojson.feature(topoJSONdata, topoJSONdata.objects.countries);
   g.selectAll('path').data(countries.features)
     .enter().append('path')
       .attr('class', 'country')
       .attr('d', pathGenerator)
-      .on('click',() =>
-            console.log('aaa')
-        )
+      .on('click',(d) =>{
+        // console.log(projection.invert(d3.mouse(d3.event.currentTarget)))
+        // console.log(d3.mouse(d3.event.currentTarget))
+        console.log(countryName[d.id])
+    }
+  )
       .append('title')
-      .text(d => countryName[d.id]);
-  
+      .text(d => countryName[d.id])
+      
+      
+
+    console.log(topoJSONdata)
+    // console.log('aaa')
+    
+  //   const country = d3.selectAll('path')
+  // console.log(typeof(country))
+  // console.log(country)
 });
+
+// const country = svg.selectAll('path')
+// console.log(country)
+//  -->  not working

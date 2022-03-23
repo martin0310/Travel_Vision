@@ -109,7 +109,7 @@ https://templatemo.com/tm-560-astro-motion
                                 </div>
                                 <p>
                                 <!-- Login Box -->
-                                <form name="form" action="http://127.0.0.1/KimiSignUp/login.php" method="POST" accept-charset="UTF-8">
+                                <form name="form" action="http://140.123.173.10/mem_index.php" method="POST" accept-charset="UTF-8">
                                     <p>
                                     Account : <input type="text" name="memid" size="15" style="width:150px; height:15px; background:rgba(0,0,0,0); border:none; border-bottom: 1px solid white;" /> <br/><br/>
 
