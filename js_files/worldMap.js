@@ -46,7 +46,7 @@ svg.call(d3.zoom().on('zoom', () => {
 Promise.all([
   d3.tsv('https://unpkg.com/world-atlas@1.1.4/world/50m.tsv'),
   d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
-  d3.csv('https://gist.githubusercontent.com/martin0310/0e57652a6eac0ea7150b99bff58adb27/raw/8cf830684ab45e8643150008b88852d767919df2/worldcities.csv')
+  d3.csv('http://140.123.173.10/worldcities.csv')
 ]).then(([tsvData, topoJSONdata,worldCities]) => {
   
   const countryName = tsvData.reduce((accumulator, d) => {
@@ -60,7 +60,8 @@ Promise.all([
     countryName[d.iso_n3] = d.name;
   });
   */
- 
+  console.log(worldCities)
+ console.log(worldCities[0]['country'])
   // console.log(worldCities) type -- > object
   const countries = topojson.feature(topoJSONdata, topoJSONdata.objects.countries);
   g.selectAll('path').data(countries.features)

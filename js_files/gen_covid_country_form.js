@@ -1,3 +1,6 @@
+// console.log(covid_data_from_spark)
+
+
 console.log(covid_country)
 // console.log(Object.keys(country)); 
 console.log(Object.values(covid_country)[0][0])
@@ -23,6 +26,9 @@ for(i = 0; i < covid_country_arr.length; i++) {
     document.getElementById("country-dropdown").appendChild(temp_option_tag);
 
 }
+
+
+// console.log(Object.entries(covid_data_from_spark))
 
 
 // Object.entries(country).map(item => {

@@ -27,9 +27,17 @@
         // echo $output;
         // $output = json_decode($output);
         // echo gettype($output);
+        // echo "<script>";
+        // echo "covid_data_from_spark = {$output}";
+        // echo "</script>";
+        
         echo "<script>";
-        echo "covid_data_from_spark = {$output}";
+        echo "covid_data_from_spark = ". $output;
         echo "</script>";
+
+        // echo "<script>";
+        // echo "console.log('aaa') console.log('bbb')";
+        // echo "</script>";
     }
 
     

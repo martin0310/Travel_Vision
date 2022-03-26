@@ -44,16 +44,20 @@ dataFrame = dataFrame.filter(F.col("Last_Update").between(original_start_time + 
 # dataFrame.filter(F.col("Last_Update").between(original_start_time + ' 00:00:00',original_end_time + ' 23:59:00')).show()
 # dataFrame.show()
 dataFrameJsonList = dataFrame.toJSON().collect() # -- > to List
+# print(type(dataFrameJsonList))
 # print(dataFrameJsonList)
+# print('////////////////////////\n')
 # print(dataFrameJsonList[0])
 
 ini_dict = {}
 
 for element in dataFrameJsonList:
-     ini_dict[json.loads(element)['Last_Update'].split(" ",1)[0]] = element
+     ini_dict[json.loads(element)['Last_Update'].split(" ",1)[0]] = json.loads(element)
 
-print(ini_dict)
+print(ini_dict) # 每一個 key 對到 string
 
+
+# print(type(ini_dict['2021-01-03']))
 # print(json.loads(dataFrameJsonList[0])['Last_Update'])
 # print(type(dataFrameJsonList[0]))
 # print(type(dataFrameJsonList))

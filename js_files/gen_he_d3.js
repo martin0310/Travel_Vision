@@ -72,7 +72,7 @@ svg.append("g")
         .attr("transform", "rotate(-90)")
         .attr("y", (-margin.left) + 10)
         .attr("x", -height/2)
-        .text('Axis Label');
+        .text('人數');
 
 svg.append("clipPath")
         .attr("id", "clip")
