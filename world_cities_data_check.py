@@ -38,6 +38,8 @@ for key in country_city_dict_data:
         city_temp_dict = {}
         # city_temp_dict[element] = {}
         # dataFrameTemp = dataFrameTemp.union(df.filter(df.country == key).filter(df.city_ascii == element))
+        if key == "United States":
+            element = element.split(",")[0]
         if len(df.filter(df.country == key).filter(df.city_ascii == element).head(1)) != 0:
             city_temp_dict['Lat'] = df.filter(df.country == key).filter(df.city_ascii == element).first()['lat']
             city_temp_dict['Long'] = df.filter(df.country == key).filter(df.city_ascii == element).first()['lng']
