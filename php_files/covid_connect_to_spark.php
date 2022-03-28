@@ -17,6 +17,7 @@
 
         $start_time = $_POST['start-time'];
         $end_time = $_POST['end-time'];
+        // echo ">>>" . $start_time . "<<<";
         // echo $start_time;
         // echo $end_time;
 
@@ -32,7 +33,9 @@
         // echo "</script>";
         
         echo "<script>";
-        echo "covid_data_from_spark = ". $output;
+        echo "covid_data_from_spark = ". $output . ";";
+        echo "covid_start_time = new Date(\"" . $start_time . "\");";
+        echo "covid_end_time = new Date(\"" . $end_time . "\");";
         echo "</script>";
 
         // echo "<script>";

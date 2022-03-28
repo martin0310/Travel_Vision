@@ -30,6 +30,7 @@ const pathGenerator = d3.geoPath().projection(projection);
 //     });
 
 const g = svg.append('g');
+const g_tag = d3.select('g');
 
 // g.append('path')
 //     .attr('class', 'sphere')
@@ -46,8 +47,8 @@ svg.call(d3.zoom().on('zoom', () => {
 Promise.all([
   d3.tsv('https://unpkg.com/world-atlas@1.1.4/world/50m.tsv'),
   d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
-  d3.csv('http://140.123.173.10/worldcities.csv')
-]).then(([tsvData, topoJSONdata,worldCities]) => {
+  d3.json('http://140.123.173.10/World_Cities_Lat_Long.json')
+]).then(([tsvData, topoJSONdata,World_Cities_Lat_Long]) => {
   
   const countryName = tsvData.reduce((accumulator, d) => {
     accumulator[d.iso_n3] = d.name;
@@ -60,18 +61,43 @@ Promise.all([
     countryName[d.iso_n3] = d.name;
   });
   */
-  console.log(worldCities)
- console.log(worldCities[0]['country'])
-  // console.log(worldCities) type -- > object
+  console.log(World_Cities_Lat_Long)
+  // console.log(World_Cities_Lat_Long) type -- > object
   const countries = topojson.feature(topoJSONdata, topoJSONdata.objects.countries);
   g.selectAll('path').data(countries.features)
     .enter().append('path')
       .attr('class', 'country')
       .attr('d', pathGenerator)
       .on('click',(d) =>{
-        // console.log(projection.invert(d3.mouse(d3.event.currentTarget)))
-        // console.log(d3.mouse(d3.event.currentTarget))
-        console.log(countryName[d.id])
+        country = countryName[d.id]
+        const circle_romove = d3.selectAll('circle').remove()
+        for(var city in World_Cities_Lat_Long[country]){
+          // console.log(d3.mouse(d3.event.currentTarget)) -- > x y 座標
+          // console.log(projection.invert(d3.mouse(d3.event.currentTarget))) -- > 經緯度
+          // console.log(d3.mouse(d3.event.currentTarget)[0]) -- > x 軸座標
+          // console.log(countryName[d.id])
+          // console.log(World_Cities_Lat_Long[country])
+          // console.log(World_Cities_Lat_Long[country][city])
+          // console.log(+World_Cities_Lat_Long[country][city]['Lat'])
+          // console.log(typeof(+World_Cities_Lat_Long[country][city]['Lat']))
+          // console.log(this)
+          long_lat_list = projection([+World_Cities_Lat_Long[country][city]['Long'],+World_Cities_Lat_Long[country][city]['Lat']])
+          console.log(projection([+World_Cities_Lat_Long[country][city]['Long'],+World_Cities_Lat_Long[country][city]['Lat']]))
+
+          g_tag.append('circle')
+          .attr('cx',long_lat_list[0]).attr('cy',long_lat_list[1])
+          .attr('r','0.5').attr('fill','yellow')
+          
+          // svg.append('circle')
+          // .attr('cx',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Lat']))).attr('cy',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Long'])))
+          // .attr('r','0.5').attr('fill','red')
+        }
+        // g.append('circle').attr('cx',projection.invert(d3.mouse(d3.event.currentTarget)[0]))
+        // .attr('cy',projection.invert(d3.mouse(d3.event.currentTarget)[1]))
+        // .attr('fill','red')
+        // console.log(projection.invert(d3.mouse(d3.event.currentTarget)[0]))
+        // console.log(typeof(projection.invert(d3.mouse(d3.event.currentTarget)[0])))
+
     }
   )
       .append('title')

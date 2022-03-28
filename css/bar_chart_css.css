@@ -7,8 +7,7 @@ div#layout {
 }
 
 div#cost_of_living_d3 {
-    width: 700px;
-    height: 500px;
+    width: 960px;
     margin: auto;
     background-color: #f0d6b4;
     opacity: 0.8;
