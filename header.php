@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
+<!-- <body background="img/pexels-nick-wehrli-5717750.jpg"> -->
 <video autoplay muted loop id="bg-video">
-    <source src="video/video.MP4" type="video/mp4">
+    <source src="video/vide.MP4" type="video/mp4">
 </video>
 <div class="page-container">
     <div class="container-fluid">
@@ -22,26 +23,27 @@
                                 <li id="navi_02" class="nav-item">
                                     <a class="nav-link" href="#">Epidemic & Health</a>
                                     <ul id="a1">
-                                        <li class="nav-item"><a class="nav-link" href="test_HE.php">Epidemic</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="test_HC.php">Health Care</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_epidemic.php">Epidemic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_HC.php">Health Care</a></li>
                                     </ul>
                                 </li>
 
                                 <li id="navi_03" class="nav-item">
-                                    <a class="nav-link" href="test_QOL.php">Quality of Life</a>
+                                    <a class="nav-link" href="#">Quality of Life</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="test_crime.php">Crime</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="test_pollution.php">Pollution</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="test_traffic.php">Traffic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_QOL.php">Quality of Life</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_crime.php">Crime</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_pollution.php">Pollution</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="p_traffic.php">Traffic</a></li>
                                     </ul>
                                 </li>
 
                                 <li id="navi_04" class="nav-item">
-                                    <a class="nav-link" href="test_PP.php">Property Prices</a>
+                                    <a class="nav-link" href="p_PP.php">Property Prices</a>
                                 </li>
 
                                 <li id="navi_04" class="nav-item">
-                                    <a class="nav-link" href="test_COL.php">Cost of Living</a>
+                                    <a class="nav-link" href="p_COL.php">Cost of Living</a>
                                 </li>
 
                                 <li id="navi_05" class="nav-item">

@@ -57,7 +57,7 @@ for(i = 0; i < Object.keys(xxx_type).length; i++) {
 }
 
 svg = d3.select('svg');
-svgContainer = d3.select('#' + xxx_divtag);
+// svgContainer = d3.select('#' + xxx_divtag);
 
 margin = 120;
 width = 900 - 2 * margin;

@@ -1,85 +1,67 @@
 /* 前處理 col_data */
-const sample = [
-    {
-    language: 'Rust',
-    value: 78.9,
-    color: '#000000'
-    },
-    {
-    language: 'Kotlin',
-    value: 75.1,
-    color: '#00a2ee'
-    },
-    {
-    language: 'Python',
-    value: 68.0,
-    color: '#fbcb39'
-    },
-    {
-    language: 'TypeScript',
-    value: 67.0,
-    color: '#007bc8'
-    },
-    {
-    language: 'Go',
-    value: 65.6,
-    color: '#65cedb'
-    },
-    {
-    language: 'Swift',
-    value: 65.1,
-    color: '#ff6e52'
-    },
-    {
-    language: 'JavaScript',
-    value: 61.9,
-    color: '#f9de3f'
-    },
-    {
-    language: 'C#',
-    value: 60.4,
-    color: '#5d2f8e'
-    },
-    {
-    language: 'F#',
-    value: 59.6,
-    color: '#008fc9'
-    },
-    {
-    language: 'Clojure',
-    value: 59.6,
-    color: '#507dca'
-    }
-];
+
 
 /* 前處理結束 */
 
 var h_over_w_ratio = 650 / 960;
+var margin = 120;
 
 var width = document.getElementById('cost_of_living_d3').clientWidth;
-var height = width * h_over_w_ratio;
+var height = width * h_over_w_ratio - 2 * margin;
+width = width - 2 * margin;
 
 //We add our svg to the div area
-var svg = d3.select('#cost_of_living_d3')
-            .append('svg')
-            .attr('width', width)
-            .attr('height', height);
+svg_url = "http://www.w3.org/2000/svg";
 
-const xScale = d3.scaleBand()
-    .range([0, width])
-    .domain(sample.map((s) => s.language))
-    .padding(0.3)
+// restaurant
+// 建立子 tag
+// col_d3_restaurant_tag = document.createElement("div");
+// xxx_divtag = "col_d3_restaurant_tag";
+// col_d3_restaurant_tag.setAttribute("id", xxx_divtag);
+// document.getElementById("cost_of_living_d3").appendChild(col_d3_restaurant_tag);
+// // svg tag
+// svg_restaurant_tag = document.createElementNS(svg_url, "svg");
+// svg_restaurant_tag.setAttribute("viewBox", '0 0 900 650');
+// document.getElementById(xxx_divtag).appendChild(svg_restaurant_tag);
+// // 參數設定
+// svg_xxx_tag = svg_restaurant_tag;
+// xxx_type = col_data["cost_of_livings_type"]["Restaurants"];
+// xxx_emoji = col_restaurant_emoji;
+// xxx_title = "Restaurants";
+// // divtag 已賦值
+// // import js
+// js_restaurant_tag = document.createElement("script");
+// js_restaurant_tag.type = "text/javascript";
+// js_restaurant_tag.src = "js_files/col_bar_chart.js";
+// document.getElementById(xxx_divtag).appendChild(js_restaurant_tag);
 
-const yScale = d3.scaleLinear()
-    .range([height, 0])
-    .domain([0, 100]);
+// market
+// 建立子 tag
+col_d3_type_tag = document.createElement("div");
+xxx_divtag = "col_d3_type_tag";
+col_d3_type_tag.setAttribute("id", xxx_divtag);
+document.getElementById("cost_of_living_d3").appendChild(col_d3_type_tag);
 
-// ???
+svg_type_tag = document.createElementNS(svg_url, "svg");
+svg_type_tag.setAttribute("width", width);
+svg_type_tag.setAttribute("height", height);
+document.getElementById(xxx_divtag).appendChild(svg_type_tag);
+
+svg_xxx_tag = svg_type_tag;
+xxx_type = col_data["cost_of_livings_type"][col_type_var_js];
+xxx_emoji = col_emoji_type[col_type_var_js];
+xxx_title = col_type_var_js;
+
+js_type_tag = document.createElement("script");
+js_type_tag.type = "text/javascript";
+js_type_tag.src = "js_files/bar_chart.js";
+document.getElementById(xxx_divtag).appendChild(js_type_tag);
 
 //We will build a basic function to handle window resizing.
 function resize() {
     width = document.getElementById('cost_of_living_d3').clientWidth;
-    height = width * h_over_w_ratio;
+    height = width * h_over_w_ratio - 2 * margin;
+    width = width - 2 * margin;
     d3.select('#cost_of_living_d3 svg')
         .attr('width', width)
         .attr('height', height);

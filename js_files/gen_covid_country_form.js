@@ -1,6 +1,5 @@
 // console.log(covid_data_from_spark)
 
-
 console.log(covid_country)
 // console.log(Object.keys(country)); 
 console.log(Object.values(covid_country)[0][0])

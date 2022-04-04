@@ -57,10 +57,10 @@ covid_data.push(recovered_line);
 
 
 var colors = [
-    'steelblue', // Active
-    'green',
-    'red',
-    'purple'
+    'lightblue', // Active
+    'lightgreen',
+    'yellow',
+    'orange'
 ];
 
 var margin = {top: 20, right: 30, bottom: 30, left: 50},
@@ -121,9 +121,9 @@ svg.append("g")
         .append("text")
         .attr("class", "axis-label")
         .attr("transform", "rotate(-90)")
-        .attr("y", (-margin.left) + 10)
+        .attr("y", (-margin.left)+5)
         .attr("x", -height/2)
-        .text('人數');
+        .text('');
 
 svg.append("clipPath")
         .attr("id", "clip")
@@ -166,7 +166,7 @@ points.selectAll('.dot')
         .enter()
         .append('circle')
         .attr('class','dot')
-        .attr("r", 2)
+        .attr("r", 4)
         .attr('fill', function(d,i){
             return colors[d.index%colors.length];
         })
