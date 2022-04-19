@@ -42,6 +42,13 @@ svg.call(d3.zoom().on('zoom', () => {
 //       console.log('aaa')
 //   )
 }));
+function getWeatherData(city){  
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=6ba1ce1f333524ab31e1f761a4e197ff&units=metric')  
+  .then(function(resp) { return resp.json() })
+  .then(function(data) {
+    console.log(data);
+  })
+}
 
 // console.log(d3.csv('https://gist.githubusercontent.com/martin0310/0e57652a6eac0ea7150b99bff58adb27/raw/8cf830684ab45e8643150008b88852d767919df2/worldcities.csv',d => console.log(d)))
 Promise.all([
@@ -86,7 +93,11 @@ Promise.all([
 
           g_tag.append('circle')
           .attr('cx',long_lat_list[0]).attr('cy',long_lat_list[1])
-          .attr('r','0.5').attr('fill','yellow')
+          .attr('r','0.5').attr('fill','yellow').on('click',(d) => {
+            getWeatherData(city)
+          })
+          .append('title')
+          .text(d => city)
           
           // svg.append('circle')
           // .attr('cx',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Lat']))).attr('cy',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Long'])))

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Travel Vision | Property Prices</title>
+	<title>Travel Vision | Search for </title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -10,35 +10,38 @@
 	<noscript>
 	<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+	<link rel="stylesheet" href="../css/world_Map.css">
 </head>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <body class="is-preload">
 	
 	<?php
-		$datatype="PP";
+		$datatype="integrate";
 	?>
 	
 	<div id="page-wrapper">
 
 		<!-- Header -->
 		<?php
-			include('p_header.php');
+			include('m_header.php');
 		?>
 
 		<!-- Main -->
 		<div id="main" class="wrapper style1">
 			<div class="container">
 				<header class="major">
-					<h2>Property Prices</h2>
-					<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+					<h2>Search for Your Information</h2>
 				</header>
-
 				<!-- Content -->
 				<section id="content">
 					<!-- Select Form -->
 					<div class="intro-left tm-bg-dark" style="margin:0 auto">
 						<h2 class="mb-4">Select A Location</h2>
+						<svg width="960" height="500" style="display: block; margin: auto;"></svg>
+						<script src="../js_files/worldMap.js"></script>
 						<h3 class="mb-4">
 							Please choose a country and one of its city. <br /><br />
 						</h3>
@@ -53,14 +56,17 @@
 								<select id="city-dropdown" name="city">
 									<option value="">Select city</option>
 								</select>
-								</br>
-								<select id="type-dropdown" name="type_dropdown">
-									<option value="">Choose a Type</option>    
-									<option value="Rent Per Month">Rent Per Month</option>
-									<option value="Buy Apartment Price">Buy Apartment Price</option>
-									<option value="Salaries And Financing">Salaries And Financing</option>
-								</select>
 								</p>
+								<div class="col-4 col-12-medium">
+									<input type="radio" id="priority-low" name="type">
+									<label for="priority-low">Low Priority</label>
+									
+									<input type="radio" id="health_care_d3" name="type">
+									<label for="priority-normal">Epidemic</label>
+									
+									<input type="radio" id="priority-high" name="type">
+									<label for="priority-high">High Priority</label>
+								</div>
 								<br>
 								<input type="submit" name="submit" value="Submit the form" class="search search-hover primary"/>
 								<input type="reset" value="Reset" />
@@ -69,14 +75,11 @@
 						</div>
 					</div>
 				</section>
-
-				<!-- D3 TAG -->
-				<center><div id="property_price_d3" name="property_price_d3"></div></div></center>
 			</div>
 		</div>
 		<!-- Footer -->
 		<?php
-			include('p_footer.php');
+			include('m_footer.php');
 		?>
 	</div>
 
@@ -90,20 +93,22 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<?php
-	include('../php_files/dump_country_city_to_js.php');
+		include ('../php_files/dump_country_city_to_js.php');
 	?>
 
 	<script src="../js_files/gen_country_city_form.js"></script>
 
 	<?php
-	include('../php_files/connect_to_spark.php');
+		include ('../php_files/connect_to_spark.php');
 	?>
 
-	<!-- D3 of PP -->
-	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<?php
+		include('../php_files/covid_get_date.php');
+	?>
 
-	<!-- 表情包😀 -->
-	<script src="../js_files/pp_emoji.js"></script>
-	<script src="../js_files/gen_pp_d3.js"></script>
+	<!-- D3 of HE -->
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="../js_files/gen_he_d3.js"></script>
+
 </body>
 </html>

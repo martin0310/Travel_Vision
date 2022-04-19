@@ -14,7 +14,7 @@
 
 			<!-- Header -->
 			<?php
-				include('header.php');
+				include('p_header.php');
 			?>
 				<!-- Main -->
 				<div id="main" class="wrapper style1">
@@ -379,7 +379,7 @@
 
 			<!-- Footer -->
 			<?php
-				include('footer.php');
+				include('p_footer.php');
 			?>
 
 		</div>

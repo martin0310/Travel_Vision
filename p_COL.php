@@ -77,30 +77,30 @@
                     </div></ul>
                     </div>
 
-<?php
-    include('footer.php');
-?>
+        <?php
+            include('footer.php');
+        ?>
 
-<?php
-include __DIR__.'/php_files/dump_country_city_to_js.php';
-?>
+        <?php
+        include __DIR__.'/php_files/dump_country_city_to_js.php';
+        ?>
 
-<script src="js_files/gen_country_city_form.js"></script>
+        <script src="js_files/gen_country_city_form.js"></script>
 
-<?php
-include __DIR__.'/php_files/connect_to_spark.php';
-?>
+        <?php
+        include __DIR__.'/php_files/connect_to_spark.php';
+        ?>
 
-<!-- D3 of COL -->
-<script src="https://d3js.org/d3.v5.min.js"></script>
+        <!-- D3 of COL -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
 
-<!-- 表情包😀 -->
-<script src="js_files/col_emoji.js"></script>
+        <!-- 表情包😀 -->
+        <script src="js_files/col_emoji.js"></script>
 
-<!-- <script src="js_files/gen_col_d3.js"></script> -->
-<!-- test D3 20220328 -->
-<script src='js_files/d3_test_col_chart.js'></script>
+        <!-- <script src="js_files/gen_col_d3.js"></script> -->
+        <!-- test D3 20220328 -->
+        <script src='js_files/d3_test_col_chart.js'></script>
 
-</body>
+    </body>
 
 </html>

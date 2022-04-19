@@ -20,7 +20,7 @@
 
 		<!-- Header -->
 		<?php
-			include('header.php');
+			include('p_header.php');
 		?>
 
 		<!-- Main -->
@@ -28,7 +28,6 @@
 			<div class="container">
 				<header class="major">
 					<h2>Epidemic Statistics</h2>
-					<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
 				</header>
 
 				<!-- Content -->
@@ -44,7 +43,7 @@
 							<form method="post" action="">
 								<!--set method to POST -->
 								<select id="country-dropdown" name="covid_country">
-									<option value="">-Select country-</option>
+									<option value="">Select country</option>
 								</select>
 								<br>
 								<div class="row gtr-uniform gtr-50">
@@ -74,10 +73,25 @@
 				<link rel=stylesheet type="text/css" href="../css/line_graph_css.css">
 				<center><div id="health_care_d3" name="health_care_d3"></div></center>
 			</div>
+			<center><table>
+					<tr>
+					<td bgcolor="lightgreen" height="25" width="50">&nbsp;</td>
+					<td>&nbsp;&nbsp;<b>Number of Confirmed</b></td>
+					<td bgcolor="orange" height="25" width="50">&nbsp;</td>
+					<td>&nbsp;&nbsp;<b>Number of Recovered</b></td>
+					</tr>
+					<tr><td height="5"></td></tr>
+					<tr>
+					<td bgcolor="lightblue" height="25" width="50">&nbsp;</td>
+					<td>&nbsp;&nbsp;<b>Number of Active</b></td>
+					<td bgcolor="yellow" height="25" width="50">&nbsp;</td>
+					<td>&nbsp;&nbsp;<b>Number of deaths</b></td>
+					</tr>
+				</table></center>
 		</div>
 		<!-- Footer -->
 		<?php
-				include('footer.php');
+				include('p_footer.php');
 		?>
 	</div>
 

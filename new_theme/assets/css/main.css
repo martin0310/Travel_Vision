@@ -98,10 +98,9 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: #777979;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
-		font-weight: 100;
 		line-height: 1.75em;
 	}
 
@@ -2759,7 +2758,7 @@ input, select, textarea {
 
 	table {
 		margin: 0 0 2em 0;
-		width: 100%;
+		width: 60%;
 	}
 
 		table tbody tr {
@@ -4108,5 +4107,5 @@ input, select, textarea {
 						padding: 0;
 					}
 
-	}
+		}
 	

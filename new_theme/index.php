@@ -13,7 +13,7 @@
 
 		<!-- Header -->
 		<?php
-			include('header.php');
+			include('p_header.php');
 		?>  
 
 		<!-- Banner -->
@@ -22,7 +22,7 @@
 					<header>
 						<h2><img src="images/logo2.png" width="600"/></h2>
 					</header>
-					<img src="images/map.png" width="250"/>
+					<span class="image"><img src="images/map.png"/></span>
 				</div>
 				<a href="#one" class="goto-next scrolly">Next</a>
 			</section>
@@ -138,7 +138,7 @@
 					</div>
 					<footer class="major">
 						<ul class="actions special">
-							<li><a href="#" class="button primary">Sign Up!</a></li>
+							<li><a href="signup.php" class="button primary">Sign Up!</a></li>
 						</ul>
 					</footer>
 				</div>
@@ -148,7 +148,7 @@
 			<section id="five" class="wrapper style2 special fade">
 				<div class="container">
 					<header>
-						<h2>Wanna know more?</h2>
+						<h2>Want to know more?</h2>
 						<h3>Describe us now!</h3>
 						<p>To get the latest information.</p>
 					</header>
@@ -163,7 +163,7 @@
 
 			<!-- Footer -->
 			<?php
-				include('footer.php');
+				include('p_footer.php');
 			?>
 
 		</div>

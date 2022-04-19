@@ -20,15 +20,15 @@
 
 		<!-- Header -->
 		<?php
-			include('header.php');
+			include('p_header.php');
 		?>
 
 		<!-- Main -->
 		<div id="main" class="wrapper style1">
 			<div class="container">
 				<header class="major">
-					<h2>Quality of Life Statistics</h2>
-					<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+					<h2>Quality of Life</h2>
+					<p>Prepare for your life in advance</p>
 				</header>
 
 				<!-- Content -->
@@ -44,7 +44,7 @@
 							<form method="post" action="">
 								<!--set method to POST -->
 								<select id="country-dropdown" name="covid_country">
-									<option value="">-Select country-</option>
+									<option value="">Select country</option>
 								</select>
 								<!-- <select id="city-dropdown" name="city">
                                         <option value="">---Select city---</option>
@@ -80,7 +80,7 @@
 		</div>
 		<!-- Footer -->
 		<?php
-				include('footer.php');
+				include('p_footer.php');
 		?>
 	</div>
 

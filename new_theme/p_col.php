@@ -13,22 +13,22 @@
 </head>
 
 <body class="is-preload">
-	<?php
-		$datatype="COL";
-	?>
+
+<?php
+	$datatype="COL";
+?>
 	<div id="page-wrapper">
 
 		<!-- Header -->
 		<?php
-			include('header.php');
+			include('p_header.php');
 		?>
 
 		<!-- Main -->
 		<div id="main" class="wrapper style1">
 			<div class="container">
 				<header class="major">
-					<h2>Cost of Living Statistics</h2>
-					<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+					<h2>Cost of Living</h2>
 				</header>
 
 				<!-- Content -->
@@ -43,28 +43,31 @@
 						<div class="select_country_city_form">
 							<form method="post" action="">
 								<!--set method to POST -->
-								<select id="country-dropdown" name="covid_country">
-									<option value="">-Select country-</option>
+								<select id="country-dropdown" name="country" onchange="coutrySelected(this.value);">
+									<option value="">Select country</option>
 								</select>
-								<!-- <select id="city-dropdown" name="city">
-                                        <option value="">---Select city---</option>
-                                    </select> -->
 								<br>
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6">
-										<h3><label for="start">Start Date ↓</label></h3>
-										<input type="date" id="start" name="start-time" value="2021-01-01" min="2021-01-01"
-											max="2021-10-03">
-									</div>
-									<div class="col-6">
-									<h3><label for="end">End Date ↓</label></h3>
-										<input type="date" id="end" name="end-time" value="2021-01-01" min="2021-01-01"
-										max="2021-10-03">
-									</div>
-								</div>
+								<select id="city-dropdown" name="city">
+									<option value="">Select city</option>
+								</select>
+								<br>
+								<!-- choose type -->
+								<select id="type-dropdown" name="type_dropdown">
+                                        <option value="">Choose a Type</option>    
+                                        <option value="Buy Apartment Price">Buy Apartment Price</option>
+                                        <option value="Childcare">Childcare</option>
+                                        <option value="Clothing And Shoes">Clothing And Shoes</option>
+                                        <option value="Markets">Markets</option>
+                                        <option value="Rent Per Month">Rent Per Month</option>
+                                        <option value="Restaurants">Restaurants</option>
+                                        <option value="Salaries And Financing">Salaries And Financing</option>
+                                        <option value="Sports And Leisure">Sports And Leisure</option>
+                                        <option value="Transportation">Transportation</option>
+                                        <option value="Utilities (Monthly)">Utilities (Monthly)</option>
+                                    </select>
 								</br></br>
 								<ul class="actions">
-									<li><input class="search search-hover primary" type="submit" name="submit_covid" value="Submit the form"/></li>
+									<li><input class="search search-hover primary" type="submit" name="submit" value="Submit the form"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
 							</form>
@@ -74,16 +77,15 @@
 				</section>
 
 				<!-- D3 TAG -->
-				<link rel=stylesheet type="text/css" href="../css/bar_chart_css.css">
+				<!-- <link rel=stylesheet type="text/css" href="../css/bar_chart_css.css"> -->
 				<center><div id="cost_of_living_d3" name="cost_of_living_d3"></div></center>
 				<script src="https://d3js.org/d3.v5.min.js"></script>
 				<script src='../js_files/d3_test_col_chart.js'></script>
-				<script>alert(width)</script>
 			</div>
 		</div>
 		<!-- Footer -->
 		<?php
-				include('footer.php');
+			include('p_footer.php');
 		?>
 	</div>
 
@@ -113,8 +115,7 @@ include('../php_files/connect_to_spark.php');
 <!-- 表情包😀 -->
 <script src="../js_files/col_emoji.js"></script>
 
-<!-- <script src="js_files/gen_col_d3.js"></script> -->
-<!-- test D3 20220328 -->
+<script src="../js_files/gen_col_d3.js"></script>
 <script src='../js_files/d3_test_col_chart.js'></script>
 
 </body>
