@@ -27,6 +27,7 @@
     
             // TYPE
             $col_type_var = $_POST['type_dropdown'];
+            echo $col_type_var;
             // echo ">>>".$col_type_var;
     
             echo "<script>";

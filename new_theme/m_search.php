@@ -12,6 +12,7 @@
 	</noscript>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+	<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
 	<link rel="stylesheet" href="../css/world_Map.css">
 </head>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -41,7 +42,7 @@
 					<div class="intro-left tm-bg-dark" style="margin:0 auto">
 						<h2 class="mb-4">Select A Location</h2>
 						<svg width="960" height="500" style="display: block; margin: auto;"></svg>
-						<script src="../js_files/worldMap.js"></script>
+						
 						<h3 class="mb-4">
 							Please choose a country and one of its city. <br /><br />
 						</h3>
@@ -57,18 +58,33 @@
 									<option value="">Select city</option>
 								</select>
 								</p>
+								<div id="weather">
+
+								</div></br>
 								<div class="col-4 col-12-medium">
-									<input type="radio" id="priority-low" name="type">
-									<label for="priority-low">Low Priority</label>
+									<input type="checkbox" id="QOL" value="Quality_of_Life">
+  									<label for="cbox1">Quality of Life</label>
+
+									<input type="checkbox" id="CS" value="Crime_and_Safety">
+  									<label for="cbox2">Crime & Safety</label>
+
+									<input type="checkbox" id="PL" value="Pollution">
+  									<label for="cbox3">Pollution</label>
 									
-									<input type="radio" id="health_care_d3" name="type">
-									<label for="priority-normal">Epidemic</label>
-									
-									<input type="radio" id="priority-high" name="type">
-									<label for="priority-high">High Priority</label>
+									<input type="checkbox" id="TR" value="Traffic">
+  									<label for="cbox4">Traffic</label>
+
+									<input type="checkbox" id="COL" value="Cost_of_Living">
+  									<label for="cbox5">Cost of Living</label>
+
+									<input type="checkbox" id="PP" value="Property_Prices">
+  									<label for="cbox6">Property Prices</label>
+
+									<input type="checkbox" id="HE" value="Epidemic">
+  									<label for="cbox7">Epidemic</label>
 								</div>
 								<br>
-								<input type="submit" name="submit" value="Submit the form" class="search search-hover primary"/>
+								<input class="search search-hover primary" type="submit" name="submit" value="Submit the form"/>
 								<input type="reset" value="Reset" />
 							</form>
 						</div>
@@ -92,14 +108,19 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="../js_files/form_selected.js"></script>
+	<script src="../js_files/deal_with_selected.js"></script>
+	<script src="../js_files/worldMap.js"></script>
+	
 	<?php
-		include ('../php_files/dump_country_city_to_js.php');
-	?>
+    include('../php_files/dump_country_city_to_js.php');
+    ?>
 
 	<script src="../js_files/gen_country_city_form.js"></script>
+	
 
 	<?php
-		include ('../php_files/connect_to_spark.php');
+		include('../php_files/connect_to_spark.php');
 	?>
 
 	<?php
@@ -107,8 +128,10 @@
 	?>
 
 	<!-- D3 of HE -->
-	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+	<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="../js_files/gen_he_d3.js"></script>
-
+	
 </body>
 </html>

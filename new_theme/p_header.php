@@ -22,7 +22,7 @@
             </li>
             <li><a href="index.php"><b><i class="fa fa-fw fa-home"></i> Home</b></a></li>
             <li><a href="elements.php"><b><i class="fa fa-info-circle"></i> About</b></a></li>
-            <li><a href="contact.php"><b><i class="fa fa-fw fa-envelope"></i> Contact</b></a></li>
+            <li><a href="p_contact.php"><b><i class="fa fa-fw fa-envelope"></i> Contact</b></a></li>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
             <li><a href="login.php"><b><i class="fa fa-fw fa-user"></i> Login</b></a></li>
             &nbsp;&nbsp;&nbsp;

@@ -40,5 +40,5 @@ xxx_title = pp_type_var_js;
 
 js_type_tag = document.createElement("script");
 js_type_tag.type = "text/javascript";
-js_type_tag.src = "js_files/bar_chart.js";
+js_type_tag.src = "./bar_chart.js";
 document.getElementById(xxx_divtag).appendChild(js_type_tag);

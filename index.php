@@ -42,7 +42,9 @@
 
             <div class="container-fluid tm-content-container">
                 <svg width="960" height="500" style="display: block; margin: auto;"></svg>
+                <script src="../js_files/form_selected.js"></script>
                 <script src="js_files/worldMap.js"></script>
+                
             <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container w3-content">
                         
             <!-- banner -->

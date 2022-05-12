@@ -30,26 +30,22 @@ const pathGenerator = d3.geoPath().projection(projection);
 //     });
 
 const g = svg.append('g');
-const g_tag = d3.select('g');
+console.log(g)
+// const g_tag = d3.select('g');
 
 // g.append('path')
 //     .attr('class', 'sphere')
 //     .attr('d', pathGenerator({type: 'Sphere'}));
+// svg.call(d3.zoom().on('zoom', () => {
+//   g.attr('transform', d3.event.transform);
 
+// }));
 svg.call(d3.zoom().on('zoom', () => {
   g.attr('transform', d3.event.transform);
-//   g.on('click',() =>
-//       console.log('aaa')
-//   )
 }));
-function getWeatherData(city){  
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=6ba1ce1f333524ab31e1f761a4e197ff&units=metric')  
-  .then(function(resp) { return resp.json() })
-  .then(function(data) {
-    console.log(data);
-  })
-}
 
+selectedCountry = 'a'
+selectedCity = ''
 // console.log(d3.csv('https://gist.githubusercontent.com/martin0310/0e57652a6eac0ea7150b99bff58adb27/raw/8cf830684ab45e8643150008b88852d767919df2/worldcities.csv',d => console.log(d)))
 Promise.all([
   d3.tsv('https://unpkg.com/world-atlas@1.1.4/world/50m.tsv'),
@@ -68,7 +64,9 @@ Promise.all([
     countryName[d.iso_n3] = d.name;
   });
   */
-  console.log(World_Cities_Lat_Long)
+
+  // console.log(World_Cities_Lat_Long)
+ 
   // console.log(World_Cities_Lat_Long) type -- > object
   const countries = topojson.feature(topoJSONdata, topoJSONdata.objects.countries);
   g.selectAll('path').data(countries.features)
@@ -77,8 +75,9 @@ Promise.all([
       .attr('d', pathGenerator)
       .on('click',(d) =>{
         country = countryName[d.id]
+        selectedCountry = country
         const circle_romove = d3.selectAll('circle').remove()
-        for(var city in World_Cities_Lat_Long[country]){
+        for(let city in World_Cities_Lat_Long[country]){
           // console.log(d3.mouse(d3.event.currentTarget)) -- > x y 座標
           // console.log(projection.invert(d3.mouse(d3.event.currentTarget))) -- > 經緯度
           // console.log(d3.mouse(d3.event.currentTarget)[0]) -- > x 軸座標
@@ -89,15 +88,31 @@ Promise.all([
           // console.log(typeof(+World_Cities_Lat_Long[country][city]['Lat']))
           // console.log(this)
           long_lat_list = projection([+World_Cities_Lat_Long[country][city]['Long'],+World_Cities_Lat_Long[country][city]['Lat']])
-          console.log(projection([+World_Cities_Lat_Long[country][city]['Long'],+World_Cities_Lat_Long[country][city]['Lat']]))
-
-          g_tag.append('circle')
+          // console.log(projection([+World_Cities_Lat_Long[country][city]['Long'],+World_Cities_Lat_Long[country][city]['Lat']]))
+          console.log(city)
+          g.append('circle')
           .attr('cx',long_lat_list[0]).attr('cy',long_lat_list[1])
-          .attr('r','0.5').attr('fill','yellow').on('click',(d) => {
+          .attr('r','0.3').attr('fill','yellow')
+          .on('click',(d) => {
+            // selectedCity = city
+            console.log(selectedCountry)
+            console.log(city)
             getWeatherData(city)
+            // temp = 5;
+            // fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=6ba1ce1f333524ab31e1f761a4e197ff&units=metric')  
+            // .then(function(resp) { return resp.json() })
+            // .then(function(data) {
+            //   console.log(data);
+            //   temp = data.cord;
+            // })
+            // console.log(temp)
+            dealWithSelectedCountry(selectedCountry)
+            dealWithSelectedCity(city)
           })
           .append('title')
           .text(d => city)
+          
+
           
           // svg.append('circle')
           // .attr('cx',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Lat']))).attr('cy',projection.invert(d3.mouse(+World_Cities_Lat_Long[country][city]['Long'])))
@@ -116,13 +131,14 @@ Promise.all([
       
       
 
-    console.log(topoJSONdata)
+    // console.log(topoJSONdata)
     // console.log('aaa')
     
   //   const country = d3.selectAll('path')
   // console.log(typeof(country))
   // console.log(country)
 });
+
 
 // const country = svg.selectAll('path')
 // console.log(country)

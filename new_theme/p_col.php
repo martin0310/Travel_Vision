@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 	<link rel="stylesheet" href="assets/css/noscript.css" />
+	
 	</noscript>
+	<link rel="stylesheet" href="bar_chart_css.css" />
 </head>
 
 <body class="is-preload">
@@ -79,8 +81,6 @@
 				<!-- D3 TAG -->
 				<!-- <link rel=stylesheet type="text/css" href="../css/bar_chart_css.css"> -->
 				<center><div id="cost_of_living_d3" name="cost_of_living_d3"></div></center>
-				<script src="https://d3js.org/d3.v5.min.js"></script>
-				<script src='../js_files/d3_test_col_chart.js'></script>
 			</div>
 		</div>
 		<!-- Footer -->
@@ -116,7 +116,7 @@ include('../php_files/connect_to_spark.php');
 <script src="../js_files/col_emoji.js"></script>
 
 <script src="../js_files/gen_col_d3.js"></script>
-<script src='../js_files/d3_test_col_chart.js'></script>
+<!-- <script src='../js_files/d3_test_col_chart.js'></script> -->
 
 </body>
 </html>

@@ -10,6 +10,7 @@
 	<noscript>
 	<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<link rel="stylesheet" href="bar_chart_css.css" />
 </head>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -31,7 +32,6 @@
 			<div class="container">
 				<header class="major">
 					<h2>Property Prices</h2>
-					<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
 				</header>
 
 				<!-- Content -->

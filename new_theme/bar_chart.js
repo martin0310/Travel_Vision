@@ -203,7 +203,7 @@ svg.append('text')
     .attr('x', width / 2 + margin)
     .attr('y', height + margin * 1.7)
     .attr('text-anchor', 'middle')
-    .text('Item')
+    .text('Item🍽️')
 
 svg.append('text')
     .attr('class', 'title')
